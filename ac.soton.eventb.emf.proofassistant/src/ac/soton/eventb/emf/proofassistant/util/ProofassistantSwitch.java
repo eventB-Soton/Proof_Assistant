@@ -24,7 +24,9 @@ import org.eventb.emf.core.EventBCommentedElement;
 import org.eventb.emf.core.EventBElement;
 import org.eventb.emf.core.EventBNamed;
 import org.eventb.emf.core.EventBNamedCommentedElement;
+import org.eventb.emf.core.EventBNamedCommentedPredicateElement;
 import org.eventb.emf.core.EventBObject;
+import org.eventb.emf.core.EventBPredicate;
 
 /**
  * <!-- begin-user-doc -->
@@ -126,6 +128,27 @@ public class ProofassistantSwitch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ProofassistantPackage.CASES_HINT: {
+				CasesHint casesHint = (CasesHint)theEObject;
+				T result = caseCasesHint(casesHint);
+				if (result == null) result = caseHint(casesHint);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ProofassistantPackage.CASE: {
+				Case case_ = (Case)theEObject;
+				T result = caseCase(case_);
+				if (result == null) result = caseEventBNamedCommentedPredicateElement(case_);
+				if (result == null) result = caseEventBNamedCommentedElement(case_);
+				if (result == null) result = caseEventBPredicate(case_);
+				if (result == null) result = caseEventBCommentedElement(case_);
+				if (result == null) result = caseEventBNamed(case_);
+				if (result == null) result = caseEventBElement(case_);
+				if (result == null) result = caseEventBCommented(case_);
+				if (result == null) result = caseEventBObject(case_);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -172,6 +195,36 @@ public class ProofassistantSwitch<T> {
 	 * @generated
 	 */
 	public T caseSelectionHint(SelectionHint object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Cases Hint</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Cases Hint</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCasesHint(CasesHint object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Case</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Case</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCase(Case object) {
 		return null;
 	}
 
@@ -277,6 +330,36 @@ public class ProofassistantSwitch<T> {
 	 * @generated
 	 */
 	public T caseDiagram(Diagram object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Event BPredicate</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Event BPredicate</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEventBPredicate(EventBPredicate object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Event BNamed Commented Predicate Element</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Event BNamed Commented Predicate Element</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEventBNamedCommentedPredicateElement(EventBNamedCommentedPredicateElement object) {
 		return null;
 	}
 

@@ -157,6 +157,52 @@ public class ProofassistantItemProviderAdapterFactory extends ProofassistantAdap
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link ac.soton.eventb.emf.proofassistant.CasesHint} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected CasesHintItemProvider casesHintItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link ac.soton.eventb.emf.proofassistant.CasesHint}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createCasesHintAdapter() {
+		if (casesHintItemProvider == null) {
+			casesHintItemProvider = new CasesHintItemProvider(this);
+		}
+
+		return casesHintItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link ac.soton.eventb.emf.proofassistant.Case} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected CaseItemProvider caseItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link ac.soton.eventb.emf.proofassistant.Case}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createCaseAdapter() {
+		if (caseItemProvider == null) {
+			caseItemProvider = new CaseItemProvider(this);
+		}
+
+		return caseItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -284,6 +330,8 @@ public class ProofassistantItemProviderAdapterFactory extends ProofassistantAdap
 	public void dispose() {
 		if (proofAssistantItemProvider != null) proofAssistantItemProvider.dispose();
 		if (selectionHintItemProvider != null) selectionHintItemProvider.dispose();
+		if (casesHintItemProvider != null) casesHintItemProvider.dispose();
+		if (caseItemProvider != null) caseItemProvider.dispose();
 	}
 
 	/**
@@ -434,6 +482,14 @@ public class ProofassistantItemProviderAdapterFactory extends ProofassistantAdap
 						(createChildParameter
 							(CorePackage.Literals.ANNOTATION__CONTENTS,
 							 ProofassistantFactory.eINSTANCE.createProofAssistant()));
+
+				
+				annotation = ProofassistantPackage.Literals.CASE.getEAnnotation("org.eventb.emf.core.extendedMetaClasses");
+				if (annotation == null  || annotation.getReferences().contains(object.eClass()))
+					newChildDescriptors.add
+						(createChildParameter
+							(CorePackage.Literals.ANNOTATION__CONTENTS,
+							 ProofassistantFactory.eINSTANCE.createCase()));
 
 				return null;
 			}

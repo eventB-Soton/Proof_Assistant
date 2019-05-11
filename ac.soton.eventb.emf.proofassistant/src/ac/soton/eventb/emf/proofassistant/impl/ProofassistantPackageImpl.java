@@ -12,12 +12,13 @@ package ac.soton.eventb.emf.proofassistant.impl;
 
 import ac.soton.eventb.emf.diagrams.DiagramsPackage;
 
+import ac.soton.eventb.emf.proofassistant.Case;
+import ac.soton.eventb.emf.proofassistant.CasesHint;
 import ac.soton.eventb.emf.proofassistant.Hint;
 import ac.soton.eventb.emf.proofassistant.ProofAssistant;
 import ac.soton.eventb.emf.proofassistant.ProofassistantFactory;
 import ac.soton.eventb.emf.proofassistant.ProofassistantPackage;
 import ac.soton.eventb.emf.proofassistant.SelectionHint;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -54,6 +55,20 @@ public class ProofassistantPackageImpl extends EPackageImpl implements Proofassi
 	 * @generated
 	 */
 	private EClass selectionHintEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass casesHintEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass caseEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -189,6 +204,33 @@ public class ProofassistantPackageImpl extends EPackageImpl implements Proofassi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getCasesHint() {
+		return casesHintEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getCasesHint_Cases() {
+		return (EReference)casesHintEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getCase() {
+		return caseEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ProofassistantFactory getProofassistantFactory() {
 		return (ProofassistantFactory)getEFactoryInstance();
 	}
@@ -221,6 +263,11 @@ public class ProofassistantPackageImpl extends EPackageImpl implements Proofassi
 
 		selectionHintEClass = createEClass(SELECTION_HINT);
 		createEReference(selectionHintEClass, SELECTION_HINT__SELECTIONS);
+
+		casesHintEClass = createEClass(CASES_HINT);
+		createEReference(casesHintEClass, CASES_HINT__CASES);
+
+		caseEClass = createEClass(CASE);
 	}
 
 	/**
@@ -258,6 +305,8 @@ public class ProofassistantPackageImpl extends EPackageImpl implements Proofassi
 		proofAssistantEClass.getESuperTypes().add(theCorePackage.getEventBNamedCommentedElement());
 		proofAssistantEClass.getESuperTypes().add(theDiagramsPackage.getDiagram());
 		selectionHintEClass.getESuperTypes().add(this.getHint());
+		casesHintEClass.getESuperTypes().add(this.getHint());
+		caseEClass.getESuperTypes().add(theCorePackage.getEventBNamedCommentedPredicateElement());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(proofAssistantEClass, ProofAssistant.class, "ProofAssistant", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -269,6 +318,11 @@ public class ProofassistantPackageImpl extends EPackageImpl implements Proofassi
 
 		initEClass(selectionHintEClass, SelectionHint.class, "SelectionHint", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getSelectionHint_Selections(), theCorePackage.getEventBElement(), null, "selections", null, 1, -1, SelectionHint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(casesHintEClass, CasesHint.class, "CasesHint", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getCasesHint_Cases(), this.getCase(), null, "cases", null, 1, -1, CasesHint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(caseEClass, Case.class, "Case", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

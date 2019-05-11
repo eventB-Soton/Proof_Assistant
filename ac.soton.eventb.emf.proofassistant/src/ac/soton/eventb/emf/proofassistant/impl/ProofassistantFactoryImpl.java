@@ -66,6 +66,8 @@ public class ProofassistantFactoryImpl extends EFactoryImpl implements Proofassi
 		switch (eClass.getClassifierID()) {
 			case ProofassistantPackage.PROOF_ASSISTANT: return createProofAssistant();
 			case ProofassistantPackage.SELECTION_HINT: return createSelectionHint();
+			case ProofassistantPackage.CASES_HINT: return createCasesHint();
+			case ProofassistantPackage.CASE: return createCase();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -89,6 +91,26 @@ public class ProofassistantFactoryImpl extends EFactoryImpl implements Proofassi
 	public SelectionHint createSelectionHint() {
 		SelectionHintImpl selectionHint = new SelectionHintImpl();
 		return selectionHint;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CasesHint createCasesHint() {
+		CasesHintImpl casesHint = new CasesHintImpl();
+		return casesHint;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Case createCase() {
+		CaseImpl case_ = new CaseImpl();
+		return case_;
 	}
 
 	/**

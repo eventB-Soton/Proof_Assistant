@@ -249,6 +249,154 @@ public interface ProofassistantPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link ac.soton.eventb.emf.proofassistant.impl.CasesHintImpl <em>Cases Hint</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ac.soton.eventb.emf.proofassistant.impl.CasesHintImpl
+	 * @see ac.soton.eventb.emf.proofassistant.impl.ProofassistantPackageImpl#getCasesHint()
+	 * @generated
+	 */
+	int CASES_HINT = 3;
+
+	/**
+	 * The feature id for the '<em><b>Element</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CASES_HINT__ELEMENT = HINT__ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Cases</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CASES_HINT__CASES = HINT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Cases Hint</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CASES_HINT_FEATURE_COUNT = HINT_FEATURE_COUNT + 1;
+
+
+	/**
+	 * The meta object id for the '{@link ac.soton.eventb.emf.proofassistant.impl.CaseImpl <em>Case</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see ac.soton.eventb.emf.proofassistant.impl.CaseImpl
+	 * @see ac.soton.eventb.emf.proofassistant.impl.ProofassistantPackageImpl#getCase()
+	 * @generated
+	 */
+	int CASE = 4;
+
+	/**
+	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CASE__ANNOTATIONS = CorePackage.EVENT_BNAMED_COMMENTED_PREDICATE_ELEMENT__ANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Extensions</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CASE__EXTENSIONS = CorePackage.EVENT_BNAMED_COMMENTED_PREDICATE_ELEMENT__EXTENSIONS;
+
+	/**
+	 * The feature id for the '<em><b>Attributes</b></em>' map.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CASE__ATTRIBUTES = CorePackage.EVENT_BNAMED_COMMENTED_PREDICATE_ELEMENT__ATTRIBUTES;
+
+	/**
+	 * The feature id for the '<em><b>Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CASE__REFERENCE = CorePackage.EVENT_BNAMED_COMMENTED_PREDICATE_ELEMENT__REFERENCE;
+
+	/**
+	 * The feature id for the '<em><b>Generated</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CASE__GENERATED = CorePackage.EVENT_BNAMED_COMMENTED_PREDICATE_ELEMENT__GENERATED;
+
+	/**
+	 * The feature id for the '<em><b>Local Generated</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CASE__LOCAL_GENERATED = CorePackage.EVENT_BNAMED_COMMENTED_PREDICATE_ELEMENT__LOCAL_GENERATED;
+
+	/**
+	 * The feature id for the '<em><b>Internal Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CASE__INTERNAL_ID = CorePackage.EVENT_BNAMED_COMMENTED_PREDICATE_ELEMENT__INTERNAL_ID;
+
+	/**
+	 * The feature id for the '<em><b>Comment</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CASE__COMMENT = CorePackage.EVENT_BNAMED_COMMENTED_PREDICATE_ELEMENT__COMMENT;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CASE__NAME = CorePackage.EVENT_BNAMED_COMMENTED_PREDICATE_ELEMENT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Predicate</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CASE__PREDICATE = CorePackage.EVENT_BNAMED_COMMENTED_PREDICATE_ELEMENT__PREDICATE;
+
+	/**
+	 * The number of structural features of the '<em>Case</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CASE_FEATURE_COUNT = CorePackage.EVENT_BNAMED_COMMENTED_PREDICATE_ELEMENT_FEATURE_COUNT + 0;
+
+
+	/**
 	 * Returns the meta object for class '{@link ac.soton.eventb.emf.proofassistant.ProofAssistant <em>Proof Assistant</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -321,6 +469,37 @@ public interface ProofassistantPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getSelectionHint_Selections();
+
+	/**
+	 * Returns the meta object for class '{@link ac.soton.eventb.emf.proofassistant.CasesHint <em>Cases Hint</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Cases Hint</em>'.
+	 * @see ac.soton.eventb.emf.proofassistant.CasesHint
+	 * @generated
+	 */
+	EClass getCasesHint();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link ac.soton.eventb.emf.proofassistant.CasesHint#getCases <em>Cases</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Cases</em>'.
+	 * @see ac.soton.eventb.emf.proofassistant.CasesHint#getCases()
+	 * @see #getCasesHint()
+	 * @generated
+	 */
+	EReference getCasesHint_Cases();
+
+	/**
+	 * Returns the meta object for class '{@link ac.soton.eventb.emf.proofassistant.Case <em>Case</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Case</em>'.
+	 * @see ac.soton.eventb.emf.proofassistant.Case
+	 * @generated
+	 */
+	EClass getCase();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -405,6 +584,34 @@ public interface ProofassistantPackage extends EPackage {
 		 * @generated
 		 */
 		EReference SELECTION_HINT__SELECTIONS = eINSTANCE.getSelectionHint_Selections();
+
+		/**
+		 * The meta object literal for the '{@link ac.soton.eventb.emf.proofassistant.impl.CasesHintImpl <em>Cases Hint</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ac.soton.eventb.emf.proofassistant.impl.CasesHintImpl
+		 * @see ac.soton.eventb.emf.proofassistant.impl.ProofassistantPackageImpl#getCasesHint()
+		 * @generated
+		 */
+		EClass CASES_HINT = eINSTANCE.getCasesHint();
+
+		/**
+		 * The meta object literal for the '<em><b>Cases</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CASES_HINT__CASES = eINSTANCE.getCasesHint_Cases();
+
+		/**
+		 * The meta object literal for the '{@link ac.soton.eventb.emf.proofassistant.impl.CaseImpl <em>Case</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see ac.soton.eventb.emf.proofassistant.impl.CaseImpl
+		 * @see ac.soton.eventb.emf.proofassistant.impl.ProofassistantPackageImpl#getCase()
+		 * @generated
+		 */
+		EClass CASE = eINSTANCE.getCase();
 
 	}
 

@@ -48,6 +48,24 @@ public interface ProofassistantFactory extends EFactory {
 	SelectionHint createSelectionHint();
 
 	/**
+	 * Returns a new object of class '<em>Cases Hint</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Cases Hint</em>'.
+	 * @generated
+	 */
+	CasesHint createCasesHint();
+
+	/**
+	 * Returns a new object of class '<em>Case</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Case</em>'.
+	 * @generated
+	 */
+	Case createCase();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

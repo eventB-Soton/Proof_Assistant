@@ -20,5 +20,9 @@
     <genClasses ecoreClass="proofassistant.ecore#//SelectionHint">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference proofassistant.ecore#//SelectionHint/selections"/>
     </genClasses>
+    <genClasses ecoreClass="proofassistant.ecore#//CasesHint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference proofassistant.ecore#//CasesHint/cases"/>
+    </genClasses>
+    <genClasses ecoreClass="proofassistant.ecore#//Case"/>
   </genPackages>
 </genmodel:GenModel>

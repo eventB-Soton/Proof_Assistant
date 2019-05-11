@@ -38,6 +38,7 @@ public class ProofassistantTests extends TestSuite {
 	public static Test suite() {
 		TestSuite suite = new ProofassistantTests("proofassistant Tests");
 		suite.addTestSuite(ProofAssistantTest.class);
+		suite.addTestSuite(CaseTest.class);
 		return suite;
 	}
 

@@ -26,7 +26,9 @@ import org.eventb.emf.core.EventBCommentedElement;
 import org.eventb.emf.core.EventBElement;
 import org.eventb.emf.core.EventBNamed;
 import org.eventb.emf.core.EventBNamedCommentedElement;
+import org.eventb.emf.core.EventBNamedCommentedPredicateElement;
 import org.eventb.emf.core.EventBObject;
+import org.eventb.emf.core.EventBPredicate;
 
 /**
  * <!-- begin-user-doc -->
@@ -97,6 +99,14 @@ public class ProofassistantAdapterFactory extends AdapterFactoryImpl {
 				return createSelectionHintAdapter();
 			}
 			@Override
+			public Adapter caseCasesHint(CasesHint object) {
+				return createCasesHintAdapter();
+			}
+			@Override
+			public Adapter caseCase(Case object) {
+				return createCaseAdapter();
+			}
+			@Override
 			public Adapter caseEventBObject(EventBObject object) {
 				return createEventBObjectAdapter();
 			}
@@ -123,6 +133,14 @@ public class ProofassistantAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseDiagram(Diagram object) {
 				return createDiagramAdapter();
+			}
+			@Override
+			public Adapter caseEventBPredicate(EventBPredicate object) {
+				return createEventBPredicateAdapter();
+			}
+			@Override
+			public Adapter caseEventBNamedCommentedPredicateElement(EventBNamedCommentedPredicateElement object) {
+				return createEventBNamedCommentedPredicateElementAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -183,6 +201,34 @@ public class ProofassistantAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSelectionHintAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ac.soton.eventb.emf.proofassistant.CasesHint <em>Cases Hint</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ac.soton.eventb.emf.proofassistant.CasesHint
+	 * @generated
+	 */
+	public Adapter createCasesHintAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link ac.soton.eventb.emf.proofassistant.Case <em>Case</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see ac.soton.eventb.emf.proofassistant.Case
+	 * @generated
+	 */
+	public Adapter createCaseAdapter() {
 		return null;
 	}
 
@@ -281,6 +327,34 @@ public class ProofassistantAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createDiagramAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eventb.emf.core.EventBPredicate <em>Event BPredicate</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eventb.emf.core.EventBPredicate
+	 * @generated
+	 */
+	public Adapter createEventBPredicateAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eventb.emf.core.EventBNamedCommentedPredicateElement <em>Event BNamed Commented Predicate Element</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eventb.emf.core.EventBNamedCommentedPredicateElement
+	 * @generated
+	 */
+	public Adapter createEventBNamedCommentedPredicateElementAdapter() {
 		return null;
 	}
 

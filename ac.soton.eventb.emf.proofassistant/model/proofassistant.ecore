@@ -16,4 +16,9 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="selections" lowerBound="1"
         upperBound="-1" eType="ecore:EClass ../../org.eventb.emf.core/model/eventbcore.ecore#//EventBElement"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CasesHint" eSuperTypes="#//Hint">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cases" lowerBound="1" upperBound="-1"
+        eType="#//Case" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Case" eSuperTypes="../../org.eventb.emf.core/model/eventbcore.ecore#//EventBNamedCommentedPredicateElement"/>
 </ecore:EPackage>
