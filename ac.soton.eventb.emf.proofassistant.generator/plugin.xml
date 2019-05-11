@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="ac.soton.emf.translators">
+      <translator
+            adapter_class="ac.soton.emf.translator.eventb.adapter.EventBTranslatorAdapter"
+            command_id="ac.soton.eventb.emf.diagrams.generator.translateToEventB"
+            name="Proof Assistant for machine"
+            root_source_class="ProofAssistant"
+            source_package="http://soton.ac.uk/models/eventb/proofassistant/2019"
+            translator_id="ac.soton.eventb.emf.proofassitant.generator">
+      </translator>
+   </extension>
+   <extension
+         point="ac.soton.emf.translator.rulesets">
+      <ruleset
+            name="Proof Assistant Rule"
+            translator_id="ac.soton.eventb.emf.proofassitant.generator">
+         <rule
+               name="Proof Assitant Rule"
+               rule_class="ac.soton.eventb.emf.proofassistant.generator.rules.ProofAssitantRule"
+               source_class="ProofAssistant"
+               source_package="http://soton.ac.uk/models/eventb/proofassistant/2019">
+         </rule>
+      </ruleset>
+   </extension>
+
+</plugin>
