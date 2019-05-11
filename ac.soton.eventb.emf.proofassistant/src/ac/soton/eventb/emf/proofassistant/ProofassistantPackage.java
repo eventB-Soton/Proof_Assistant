@@ -165,7 +165,7 @@ public interface ProofassistantPackage extends EPackage {
 	int PROOF_ASSISTANT__COMPONENT = CorePackage.EVENT_BNAMED_COMMENTED_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Hints</b></em>' reference list.
+	 * The feature id for the '<em><b>Hints</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -270,10 +270,10 @@ public interface ProofassistantPackage extends EPackage {
 	EReference getProofAssistant_Component();
 
 	/**
-	 * Returns the meta object for the reference list '{@link ac.soton.eventb.emf.proofassistant.ProofAssistant#getHints <em>Hints</em>}'.
+	 * Returns the meta object for the containment reference list '{@link ac.soton.eventb.emf.proofassistant.ProofAssistant#getHints <em>Hints</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Hints</em>'.
+	 * @return the meta object for the containment reference list '<em>Hints</em>'.
 	 * @see ac.soton.eventb.emf.proofassistant.ProofAssistant#getHints()
 	 * @see #getProofAssistant()
 	 * @generated
@@ -363,7 +363,7 @@ public interface ProofassistantPackage extends EPackage {
 		EReference PROOF_ASSISTANT__COMPONENT = eINSTANCE.getProofAssistant_Component();
 
 		/**
-		 * The meta object literal for the '<em><b>Hints</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Hints</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

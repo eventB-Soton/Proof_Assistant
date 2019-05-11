@@ -62,7 +62,7 @@ public interface ProofAssistant extends EventBNamedCommentedElement, Diagram {
 	void setComponent(EventBNamedCommentedComponentElement value);
 
 	/**
-	 * Returns the value of the '<em><b>Hints</b></em>' reference list.
+	 * Returns the value of the '<em><b>Hints</b></em>' containment reference list.
 	 * The list contents are of type {@link ac.soton.eventb.emf.proofassistant.Hint}.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -70,9 +70,9 @@ public interface ProofAssistant extends EventBNamedCommentedElement, Diagram {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Hints</em>' reference list.
+	 * @return the value of the '<em>Hints</em>' containment reference list.
 	 * @see ac.soton.eventb.emf.proofassistant.ProofassistantPackage#getProofAssistant_Hints()
-	 * @model required="true"
+	 * @model containment="true" required="true"
 	 * @generated
 	 */
 	EList<Hint> getHints();

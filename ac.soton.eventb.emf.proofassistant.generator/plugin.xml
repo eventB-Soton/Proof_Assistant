@@ -15,13 +15,12 @@
    <extension
          point="ac.soton.emf.translator.rulesets">
       <ruleset
-            name="Proof Assistant Rule"
+            name="Proof Assistant Rule Set"
             translator_id="ac.soton.eventb.emf.proofassitant.generator">
          <rule
-               name="Proof Assitant Rule"
-               rule_class="ac.soton.eventb.emf.proofassistant.generator.rules.ProofAssitantRule"
-               source_class="ProofAssistant"
-               source_package="http://soton.ac.uk/models/eventb/proofassistant/2019">
+               name="Selection Hint Rule"
+               rule_class="ac.soton.eventb.emf.proofassistant.generator.rules.SelectionHintRule"
+               source_class="SelectionHint">
          </rule>
       </ruleset>
    </extension>
