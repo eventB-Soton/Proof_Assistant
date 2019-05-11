@@ -1,0 +1,17 @@
+machine m0
+variables a b c
+invariants
+	@case0_1: a ≤ c
+	@case0_2: a ≠ 1 ⇒ b = a + 1
+	@case0_3: a = 1 ⇒ b ≤ c
+events
+	event INITIALISATION
+	then
+		@act0: a, b, c ≔ 0, 1, 0
+	end
+	
+	event Set
+	then
+		@act0: a ≔ b − 1
+	end
+end
