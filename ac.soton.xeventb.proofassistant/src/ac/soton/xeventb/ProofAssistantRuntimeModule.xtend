@@ -3,9 +3,20 @@
  */
 package ac.soton.xeventb
 
+import ac.soton.xeventb.common.EventBValueConverter
+import org.eclipse.xtext.conversion.IValueConverterService
 
 /**
  * Use this class to register components to be used at runtime / without the Equinox extension registry.
  */
 class ProofAssistantRuntimeModule extends AbstractProofAssistantRuntimeModule {
+	/**
+	 * Bind the value converter service for Event-B values, e.g., converting comments,
+	 * labels, etc.
+	 * 
+	 * @see EventBValueConverter
+	 */
+	 override Class<? extends IValueConverterService> bindIValueConverterService() {
+		return typeof(EventBValueConverter);
+	}
 }

@@ -1329,9 +1329,16 @@ rule__SelectionHint__Group__3__Impl
 	}
 :
 (
-	{ before(grammarAccess.getSelectionHintAccess().getSelectionsAssignment_3()); }
-	(rule__SelectionHint__SelectionsAssignment_3)
-	{ after(grammarAccess.getSelectionHintAccess().getSelectionsAssignment_3()); }
+	(
+		{ before(grammarAccess.getSelectionHintAccess().getSelectionsAssignment_3()); }
+		(rule__SelectionHint__SelectionsAssignment_3)
+		{ after(grammarAccess.getSelectionHintAccess().getSelectionsAssignment_3()); }
+	)
+	(
+		{ before(grammarAccess.getSelectionHintAccess().getSelectionsAssignment_3()); }
+		(rule__SelectionHint__SelectionsAssignment_3)*
+		{ after(grammarAccess.getSelectionHintAccess().getSelectionsAssignment_3()); }
+	)
 )
 ;
 finally {
@@ -1437,9 +1444,16 @@ rule__CasesHint__Group__3__Impl
 	}
 :
 (
-	{ before(grammarAccess.getCasesHintAccess().getCasesAssignment_3()); }
-	(rule__CasesHint__CasesAssignment_3)
-	{ after(grammarAccess.getCasesHintAccess().getCasesAssignment_3()); }
+	(
+		{ before(grammarAccess.getCasesHintAccess().getCasesAssignment_3()); }
+		(rule__CasesHint__CasesAssignment_3)
+		{ after(grammarAccess.getCasesHintAccess().getCasesAssignment_3()); }
+	)
+	(
+		{ before(grammarAccess.getCasesHintAccess().getCasesAssignment_3()); }
+		(rule__CasesHint__CasesAssignment_3)*
+		{ after(grammarAccess.getCasesHintAccess().getCasesAssignment_3()); }
+	)
 )
 ;
 finally {

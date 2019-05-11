@@ -1022,11 +1022,11 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
                 else if ( (LA2_1==RULE_ID) ) {
                     int LA2_3 = input.LA(3);
 
-                    if ( (LA2_3==115) ) {
-                        alt2=1;
-                    }
-                    else if ( (LA2_3==116) ) {
+                    if ( (LA2_3==116) ) {
                         alt2=2;
+                    }
+                    else if ( (LA2_3==115) ) {
+                        alt2=1;
                     }
                     else {
                         NoViableAltException nvae =
@@ -4473,23 +4473,26 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__SelectionHint__Group__3__Impl"
-    // InternalProofAssistant.g:1326:1: rule__SelectionHint__Group__3__Impl : ( ( rule__SelectionHint__SelectionsAssignment_3 ) ) ;
+    // InternalProofAssistant.g:1326:1: rule__SelectionHint__Group__3__Impl : ( ( ( rule__SelectionHint__SelectionsAssignment_3 ) ) ( ( rule__SelectionHint__SelectionsAssignment_3 )* ) ) ;
     public final void rule__SelectionHint__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalProofAssistant.g:1330:1: ( ( ( rule__SelectionHint__SelectionsAssignment_3 ) ) )
-            // InternalProofAssistant.g:1331:1: ( ( rule__SelectionHint__SelectionsAssignment_3 ) )
+            // InternalProofAssistant.g:1330:1: ( ( ( ( rule__SelectionHint__SelectionsAssignment_3 ) ) ( ( rule__SelectionHint__SelectionsAssignment_3 )* ) ) )
+            // InternalProofAssistant.g:1331:1: ( ( ( rule__SelectionHint__SelectionsAssignment_3 ) ) ( ( rule__SelectionHint__SelectionsAssignment_3 )* ) )
             {
-            // InternalProofAssistant.g:1331:1: ( ( rule__SelectionHint__SelectionsAssignment_3 ) )
-            // InternalProofAssistant.g:1332:2: ( rule__SelectionHint__SelectionsAssignment_3 )
+            // InternalProofAssistant.g:1331:1: ( ( ( rule__SelectionHint__SelectionsAssignment_3 ) ) ( ( rule__SelectionHint__SelectionsAssignment_3 )* ) )
+            // InternalProofAssistant.g:1332:2: ( ( rule__SelectionHint__SelectionsAssignment_3 ) ) ( ( rule__SelectionHint__SelectionsAssignment_3 )* )
+            {
+            // InternalProofAssistant.g:1332:2: ( ( rule__SelectionHint__SelectionsAssignment_3 ) )
+            // InternalProofAssistant.g:1333:3: ( rule__SelectionHint__SelectionsAssignment_3 )
             {
              before(grammarAccess.getSelectionHintAccess().getSelectionsAssignment_3()); 
-            // InternalProofAssistant.g:1333:2: ( rule__SelectionHint__SelectionsAssignment_3 )
-            // InternalProofAssistant.g:1333:3: rule__SelectionHint__SelectionsAssignment_3
+            // InternalProofAssistant.g:1334:3: ( rule__SelectionHint__SelectionsAssignment_3 )
+            // InternalProofAssistant.g:1334:4: rule__SelectionHint__SelectionsAssignment_3
             {
-            pushFollow(FOLLOW_2);
+            pushFollow(FOLLOW_11);
             rule__SelectionHint__SelectionsAssignment_3();
 
             state._fsp--;
@@ -4498,6 +4501,46 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
             }
 
              after(grammarAccess.getSelectionHintAccess().getSelectionsAssignment_3()); 
+
+            }
+
+            // InternalProofAssistant.g:1337:2: ( ( rule__SelectionHint__SelectionsAssignment_3 )* )
+            // InternalProofAssistant.g:1338:3: ( rule__SelectionHint__SelectionsAssignment_3 )*
+            {
+             before(grammarAccess.getSelectionHintAccess().getSelectionsAssignment_3()); 
+            // InternalProofAssistant.g:1339:3: ( rule__SelectionHint__SelectionsAssignment_3 )*
+            loop10:
+            do {
+                int alt10=2;
+                int LA10_0 = input.LA(1);
+
+                if ( ((LA10_0>=RULE_STRING && LA10_0<=RULE_ID)) ) {
+                    alt10=1;
+                }
+
+
+                switch (alt10) {
+            	case 1 :
+            	    // InternalProofAssistant.g:1339:4: rule__SelectionHint__SelectionsAssignment_3
+            	    {
+            	    pushFollow(FOLLOW_11);
+            	    rule__SelectionHint__SelectionsAssignment_3();
+
+            	    state._fsp--;
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop10;
+                }
+            } while (true);
+
+             after(grammarAccess.getSelectionHintAccess().getSelectionsAssignment_3()); 
+
+            }
+
 
             }
 
@@ -4520,14 +4563,14 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__CasesHint__Group__0"
-    // InternalProofAssistant.g:1342:1: rule__CasesHint__Group__0 : rule__CasesHint__Group__0__Impl rule__CasesHint__Group__1 ;
+    // InternalProofAssistant.g:1349:1: rule__CasesHint__Group__0 : rule__CasesHint__Group__0__Impl rule__CasesHint__Group__1 ;
     public final void rule__CasesHint__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalProofAssistant.g:1346:1: ( rule__CasesHint__Group__0__Impl rule__CasesHint__Group__1 )
-            // InternalProofAssistant.g:1347:2: rule__CasesHint__Group__0__Impl rule__CasesHint__Group__1
+            // InternalProofAssistant.g:1353:1: ( rule__CasesHint__Group__0__Impl rule__CasesHint__Group__1 )
+            // InternalProofAssistant.g:1354:2: rule__CasesHint__Group__0__Impl rule__CasesHint__Group__1
             {
             pushFollow(FOLLOW_4);
             rule__CasesHint__Group__0__Impl();
@@ -4558,17 +4601,17 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__CasesHint__Group__0__Impl"
-    // InternalProofAssistant.g:1354:1: rule__CasesHint__Group__0__Impl : ( 'for' ) ;
+    // InternalProofAssistant.g:1361:1: rule__CasesHint__Group__0__Impl : ( 'for' ) ;
     public final void rule__CasesHint__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalProofAssistant.g:1358:1: ( ( 'for' ) )
-            // InternalProofAssistant.g:1359:1: ( 'for' )
+            // InternalProofAssistant.g:1365:1: ( ( 'for' ) )
+            // InternalProofAssistant.g:1366:1: ( 'for' )
             {
-            // InternalProofAssistant.g:1359:1: ( 'for' )
-            // InternalProofAssistant.g:1360:2: 'for'
+            // InternalProofAssistant.g:1366:1: ( 'for' )
+            // InternalProofAssistant.g:1367:2: 'for'
             {
              before(grammarAccess.getCasesHintAccess().getForKeyword_0()); 
             match(input,114,FOLLOW_2); 
@@ -4595,16 +4638,16 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__CasesHint__Group__1"
-    // InternalProofAssistant.g:1369:1: rule__CasesHint__Group__1 : rule__CasesHint__Group__1__Impl rule__CasesHint__Group__2 ;
+    // InternalProofAssistant.g:1376:1: rule__CasesHint__Group__1 : rule__CasesHint__Group__1__Impl rule__CasesHint__Group__2 ;
     public final void rule__CasesHint__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalProofAssistant.g:1373:1: ( rule__CasesHint__Group__1__Impl rule__CasesHint__Group__2 )
-            // InternalProofAssistant.g:1374:2: rule__CasesHint__Group__1__Impl rule__CasesHint__Group__2
+            // InternalProofAssistant.g:1380:1: ( rule__CasesHint__Group__1__Impl rule__CasesHint__Group__2 )
+            // InternalProofAssistant.g:1381:2: rule__CasesHint__Group__1__Impl rule__CasesHint__Group__2
             {
-            pushFollow(FOLLOW_11);
+            pushFollow(FOLLOW_12);
             rule__CasesHint__Group__1__Impl();
 
             state._fsp--;
@@ -4633,21 +4676,21 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__CasesHint__Group__1__Impl"
-    // InternalProofAssistant.g:1381:1: rule__CasesHint__Group__1__Impl : ( ( rule__CasesHint__ElementAssignment_1 ) ) ;
+    // InternalProofAssistant.g:1388:1: rule__CasesHint__Group__1__Impl : ( ( rule__CasesHint__ElementAssignment_1 ) ) ;
     public final void rule__CasesHint__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalProofAssistant.g:1385:1: ( ( ( rule__CasesHint__ElementAssignment_1 ) ) )
-            // InternalProofAssistant.g:1386:1: ( ( rule__CasesHint__ElementAssignment_1 ) )
+            // InternalProofAssistant.g:1392:1: ( ( ( rule__CasesHint__ElementAssignment_1 ) ) )
+            // InternalProofAssistant.g:1393:1: ( ( rule__CasesHint__ElementAssignment_1 ) )
             {
-            // InternalProofAssistant.g:1386:1: ( ( rule__CasesHint__ElementAssignment_1 ) )
-            // InternalProofAssistant.g:1387:2: ( rule__CasesHint__ElementAssignment_1 )
+            // InternalProofAssistant.g:1393:1: ( ( rule__CasesHint__ElementAssignment_1 ) )
+            // InternalProofAssistant.g:1394:2: ( rule__CasesHint__ElementAssignment_1 )
             {
              before(grammarAccess.getCasesHintAccess().getElementAssignment_1()); 
-            // InternalProofAssistant.g:1388:2: ( rule__CasesHint__ElementAssignment_1 )
-            // InternalProofAssistant.g:1388:3: rule__CasesHint__ElementAssignment_1
+            // InternalProofAssistant.g:1395:2: ( rule__CasesHint__ElementAssignment_1 )
+            // InternalProofAssistant.g:1395:3: rule__CasesHint__ElementAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__CasesHint__ElementAssignment_1();
@@ -4680,16 +4723,16 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__CasesHint__Group__2"
-    // InternalProofAssistant.g:1396:1: rule__CasesHint__Group__2 : rule__CasesHint__Group__2__Impl rule__CasesHint__Group__3 ;
+    // InternalProofAssistant.g:1403:1: rule__CasesHint__Group__2 : rule__CasesHint__Group__2__Impl rule__CasesHint__Group__3 ;
     public final void rule__CasesHint__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalProofAssistant.g:1400:1: ( rule__CasesHint__Group__2__Impl rule__CasesHint__Group__3 )
-            // InternalProofAssistant.g:1401:2: rule__CasesHint__Group__2__Impl rule__CasesHint__Group__3
+            // InternalProofAssistant.g:1407:1: ( rule__CasesHint__Group__2__Impl rule__CasesHint__Group__3 )
+            // InternalProofAssistant.g:1408:2: rule__CasesHint__Group__2__Impl rule__CasesHint__Group__3
             {
-            pushFollow(FOLLOW_12);
+            pushFollow(FOLLOW_13);
             rule__CasesHint__Group__2__Impl();
 
             state._fsp--;
@@ -4718,17 +4761,17 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__CasesHint__Group__2__Impl"
-    // InternalProofAssistant.g:1408:1: rule__CasesHint__Group__2__Impl : ( 'cases' ) ;
+    // InternalProofAssistant.g:1415:1: rule__CasesHint__Group__2__Impl : ( 'cases' ) ;
     public final void rule__CasesHint__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalProofAssistant.g:1412:1: ( ( 'cases' ) )
-            // InternalProofAssistant.g:1413:1: ( 'cases' )
+            // InternalProofAssistant.g:1419:1: ( ( 'cases' ) )
+            // InternalProofAssistant.g:1420:1: ( 'cases' )
             {
-            // InternalProofAssistant.g:1413:1: ( 'cases' )
-            // InternalProofAssistant.g:1414:2: 'cases'
+            // InternalProofAssistant.g:1420:1: ( 'cases' )
+            // InternalProofAssistant.g:1421:2: 'cases'
             {
              before(grammarAccess.getCasesHintAccess().getCasesKeyword_2()); 
             match(input,116,FOLLOW_2); 
@@ -4755,14 +4798,14 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__CasesHint__Group__3"
-    // InternalProofAssistant.g:1423:1: rule__CasesHint__Group__3 : rule__CasesHint__Group__3__Impl ;
+    // InternalProofAssistant.g:1430:1: rule__CasesHint__Group__3 : rule__CasesHint__Group__3__Impl ;
     public final void rule__CasesHint__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalProofAssistant.g:1427:1: ( rule__CasesHint__Group__3__Impl )
-            // InternalProofAssistant.g:1428:2: rule__CasesHint__Group__3__Impl
+            // InternalProofAssistant.g:1434:1: ( rule__CasesHint__Group__3__Impl )
+            // InternalProofAssistant.g:1435:2: rule__CasesHint__Group__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__CasesHint__Group__3__Impl();
@@ -4788,23 +4831,26 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__CasesHint__Group__3__Impl"
-    // InternalProofAssistant.g:1434:1: rule__CasesHint__Group__3__Impl : ( ( rule__CasesHint__CasesAssignment_3 ) ) ;
+    // InternalProofAssistant.g:1441:1: rule__CasesHint__Group__3__Impl : ( ( ( rule__CasesHint__CasesAssignment_3 ) ) ( ( rule__CasesHint__CasesAssignment_3 )* ) ) ;
     public final void rule__CasesHint__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalProofAssistant.g:1438:1: ( ( ( rule__CasesHint__CasesAssignment_3 ) ) )
-            // InternalProofAssistant.g:1439:1: ( ( rule__CasesHint__CasesAssignment_3 ) )
+            // InternalProofAssistant.g:1445:1: ( ( ( ( rule__CasesHint__CasesAssignment_3 ) ) ( ( rule__CasesHint__CasesAssignment_3 )* ) ) )
+            // InternalProofAssistant.g:1446:1: ( ( ( rule__CasesHint__CasesAssignment_3 ) ) ( ( rule__CasesHint__CasesAssignment_3 )* ) )
             {
-            // InternalProofAssistant.g:1439:1: ( ( rule__CasesHint__CasesAssignment_3 ) )
-            // InternalProofAssistant.g:1440:2: ( rule__CasesHint__CasesAssignment_3 )
+            // InternalProofAssistant.g:1446:1: ( ( ( rule__CasesHint__CasesAssignment_3 ) ) ( ( rule__CasesHint__CasesAssignment_3 )* ) )
+            // InternalProofAssistant.g:1447:2: ( ( rule__CasesHint__CasesAssignment_3 ) ) ( ( rule__CasesHint__CasesAssignment_3 )* )
+            {
+            // InternalProofAssistant.g:1447:2: ( ( rule__CasesHint__CasesAssignment_3 ) )
+            // InternalProofAssistant.g:1448:3: ( rule__CasesHint__CasesAssignment_3 )
             {
              before(grammarAccess.getCasesHintAccess().getCasesAssignment_3()); 
-            // InternalProofAssistant.g:1441:2: ( rule__CasesHint__CasesAssignment_3 )
-            // InternalProofAssistant.g:1441:3: rule__CasesHint__CasesAssignment_3
+            // InternalProofAssistant.g:1449:3: ( rule__CasesHint__CasesAssignment_3 )
+            // InternalProofAssistant.g:1449:4: rule__CasesHint__CasesAssignment_3
             {
-            pushFollow(FOLLOW_2);
+            pushFollow(FOLLOW_14);
             rule__CasesHint__CasesAssignment_3();
 
             state._fsp--;
@@ -4813,6 +4859,46 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
             }
 
              after(grammarAccess.getCasesHintAccess().getCasesAssignment_3()); 
+
+            }
+
+            // InternalProofAssistant.g:1452:2: ( ( rule__CasesHint__CasesAssignment_3 )* )
+            // InternalProofAssistant.g:1453:3: ( rule__CasesHint__CasesAssignment_3 )*
+            {
+             before(grammarAccess.getCasesHintAccess().getCasesAssignment_3()); 
+            // InternalProofAssistant.g:1454:3: ( rule__CasesHint__CasesAssignment_3 )*
+            loop11:
+            do {
+                int alt11=2;
+                int LA11_0 = input.LA(1);
+
+                if ( (LA11_0==RULE_XLABEL) ) {
+                    alt11=1;
+                }
+
+
+                switch (alt11) {
+            	case 1 :
+            	    // InternalProofAssistant.g:1454:4: rule__CasesHint__CasesAssignment_3
+            	    {
+            	    pushFollow(FOLLOW_14);
+            	    rule__CasesHint__CasesAssignment_3();
+
+            	    state._fsp--;
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop11;
+                }
+            } while (true);
+
+             after(grammarAccess.getCasesHintAccess().getCasesAssignment_3()); 
+
+            }
+
 
             }
 
@@ -4835,16 +4921,16 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Case__Group__0"
-    // InternalProofAssistant.g:1450:1: rule__Case__Group__0 : rule__Case__Group__0__Impl rule__Case__Group__1 ;
+    // InternalProofAssistant.g:1464:1: rule__Case__Group__0 : rule__Case__Group__0__Impl rule__Case__Group__1 ;
     public final void rule__Case__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalProofAssistant.g:1454:1: ( rule__Case__Group__0__Impl rule__Case__Group__1 )
-            // InternalProofAssistant.g:1455:2: rule__Case__Group__0__Impl rule__Case__Group__1
+            // InternalProofAssistant.g:1468:1: ( rule__Case__Group__0__Impl rule__Case__Group__1 )
+            // InternalProofAssistant.g:1469:2: rule__Case__Group__0__Impl rule__Case__Group__1
             {
-            pushFollow(FOLLOW_13);
+            pushFollow(FOLLOW_15);
             rule__Case__Group__0__Impl();
 
             state._fsp--;
@@ -4873,21 +4959,21 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Case__Group__0__Impl"
-    // InternalProofAssistant.g:1462:1: rule__Case__Group__0__Impl : ( ( rule__Case__NameAssignment_0 ) ) ;
+    // InternalProofAssistant.g:1476:1: rule__Case__Group__0__Impl : ( ( rule__Case__NameAssignment_0 ) ) ;
     public final void rule__Case__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalProofAssistant.g:1466:1: ( ( ( rule__Case__NameAssignment_0 ) ) )
-            // InternalProofAssistant.g:1467:1: ( ( rule__Case__NameAssignment_0 ) )
+            // InternalProofAssistant.g:1480:1: ( ( ( rule__Case__NameAssignment_0 ) ) )
+            // InternalProofAssistant.g:1481:1: ( ( rule__Case__NameAssignment_0 ) )
             {
-            // InternalProofAssistant.g:1467:1: ( ( rule__Case__NameAssignment_0 ) )
-            // InternalProofAssistant.g:1468:2: ( rule__Case__NameAssignment_0 )
+            // InternalProofAssistant.g:1481:1: ( ( rule__Case__NameAssignment_0 ) )
+            // InternalProofAssistant.g:1482:2: ( rule__Case__NameAssignment_0 )
             {
              before(grammarAccess.getCaseAccess().getNameAssignment_0()); 
-            // InternalProofAssistant.g:1469:2: ( rule__Case__NameAssignment_0 )
-            // InternalProofAssistant.g:1469:3: rule__Case__NameAssignment_0
+            // InternalProofAssistant.g:1483:2: ( rule__Case__NameAssignment_0 )
+            // InternalProofAssistant.g:1483:3: rule__Case__NameAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__Case__NameAssignment_0();
@@ -4920,14 +5006,14 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Case__Group__1"
-    // InternalProofAssistant.g:1477:1: rule__Case__Group__1 : rule__Case__Group__1__Impl ;
+    // InternalProofAssistant.g:1491:1: rule__Case__Group__1 : rule__Case__Group__1__Impl ;
     public final void rule__Case__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalProofAssistant.g:1481:1: ( rule__Case__Group__1__Impl )
-            // InternalProofAssistant.g:1482:2: rule__Case__Group__1__Impl
+            // InternalProofAssistant.g:1495:1: ( rule__Case__Group__1__Impl )
+            // InternalProofAssistant.g:1496:2: rule__Case__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Case__Group__1__Impl();
@@ -4953,21 +5039,21 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Case__Group__1__Impl"
-    // InternalProofAssistant.g:1488:1: rule__Case__Group__1__Impl : ( ( rule__Case__PredicateAssignment_1 ) ) ;
+    // InternalProofAssistant.g:1502:1: rule__Case__Group__1__Impl : ( ( rule__Case__PredicateAssignment_1 ) ) ;
     public final void rule__Case__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalProofAssistant.g:1492:1: ( ( ( rule__Case__PredicateAssignment_1 ) ) )
-            // InternalProofAssistant.g:1493:1: ( ( rule__Case__PredicateAssignment_1 ) )
+            // InternalProofAssistant.g:1506:1: ( ( ( rule__Case__PredicateAssignment_1 ) ) )
+            // InternalProofAssistant.g:1507:1: ( ( rule__Case__PredicateAssignment_1 ) )
             {
-            // InternalProofAssistant.g:1493:1: ( ( rule__Case__PredicateAssignment_1 ) )
-            // InternalProofAssistant.g:1494:2: ( rule__Case__PredicateAssignment_1 )
+            // InternalProofAssistant.g:1507:1: ( ( rule__Case__PredicateAssignment_1 ) )
+            // InternalProofAssistant.g:1508:2: ( rule__Case__PredicateAssignment_1 )
             {
              before(grammarAccess.getCaseAccess().getPredicateAssignment_1()); 
-            // InternalProofAssistant.g:1495:2: ( rule__Case__PredicateAssignment_1 )
-            // InternalProofAssistant.g:1495:3: rule__Case__PredicateAssignment_1
+            // InternalProofAssistant.g:1509:2: ( rule__Case__PredicateAssignment_1 )
+            // InternalProofAssistant.g:1509:3: rule__Case__PredicateAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__Case__PredicateAssignment_1();
@@ -5000,16 +5086,16 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0"
-    // InternalProofAssistant.g:1504:1: rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0 : rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0__Impl rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1 ;
+    // InternalProofAssistant.g:1518:1: rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0 : rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0__Impl rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1 ;
     public final void rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalProofAssistant.g:1508:1: ( rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0__Impl rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1 )
-            // InternalProofAssistant.g:1509:2: rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0__Impl rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1
+            // InternalProofAssistant.g:1522:1: ( rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0__Impl rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1 )
+            // InternalProofAssistant.g:1523:2: rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0__Impl rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1
             {
-            pushFollow(FOLLOW_14);
+            pushFollow(FOLLOW_16);
             rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0__Impl();
 
             state._fsp--;
@@ -5038,17 +5124,17 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0__Impl"
-    // InternalProofAssistant.g:1516:1: rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0__Impl : ( '%' ) ;
+    // InternalProofAssistant.g:1530:1: rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0__Impl : ( '%' ) ;
     public final void rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalProofAssistant.g:1520:1: ( ( '%' ) )
-            // InternalProofAssistant.g:1521:1: ( '%' )
+            // InternalProofAssistant.g:1534:1: ( ( '%' ) )
+            // InternalProofAssistant.g:1535:1: ( '%' )
             {
-            // InternalProofAssistant.g:1521:1: ( '%' )
-            // InternalProofAssistant.g:1522:2: '%'
+            // InternalProofAssistant.g:1535:1: ( '%' )
+            // InternalProofAssistant.g:1536:2: '%'
             {
              before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getPercentSignKeyword_32_0()); 
             match(input,117,FOLLOW_2); 
@@ -5075,14 +5161,14 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1"
-    // InternalProofAssistant.g:1531:1: rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1 : rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1__Impl ;
+    // InternalProofAssistant.g:1545:1: rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1 : rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1__Impl ;
     public final void rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalProofAssistant.g:1535:1: ( rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1__Impl )
-            // InternalProofAssistant.g:1536:2: rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1__Impl
+            // InternalProofAssistant.g:1549:1: ( rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1__Impl )
+            // InternalProofAssistant.g:1550:2: rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1__Impl();
@@ -5108,17 +5194,17 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1__Impl"
-    // InternalProofAssistant.g:1542:1: rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1__Impl : ( '\\u22C2' ) ;
+    // InternalProofAssistant.g:1556:1: rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1__Impl : ( '\\u22C2' ) ;
     public final void rule__EVENTB_EXPRESSION_SYMBOLS__Group_32__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalProofAssistant.g:1546:1: ( ( '\\u22C2' ) )
-            // InternalProofAssistant.g:1547:1: ( '\\u22C2' )
+            // InternalProofAssistant.g:1560:1: ( ( '\\u22C2' ) )
+            // InternalProofAssistant.g:1561:1: ( '\\u22C2' )
             {
-            // InternalProofAssistant.g:1547:1: ( '\\u22C2' )
-            // InternalProofAssistant.g:1548:2: '\\u22C2'
+            // InternalProofAssistant.g:1561:1: ( '\\u22C2' )
+            // InternalProofAssistant.g:1562:2: '\\u22C2'
             {
              before(grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getNAryIntersectionKeyword_32_1()); 
             match(input,118,FOLLOW_2); 
@@ -5145,17 +5231,17 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ProofAssistant__NameAssignment_1"
-    // InternalProofAssistant.g:1558:1: rule__ProofAssistant__NameAssignment_1 : ( ruleEString ) ;
+    // InternalProofAssistant.g:1572:1: rule__ProofAssistant__NameAssignment_1 : ( ruleEString ) ;
     public final void rule__ProofAssistant__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalProofAssistant.g:1562:1: ( ( ruleEString ) )
-            // InternalProofAssistant.g:1563:2: ( ruleEString )
+            // InternalProofAssistant.g:1576:1: ( ( ruleEString ) )
+            // InternalProofAssistant.g:1577:2: ( ruleEString )
             {
-            // InternalProofAssistant.g:1563:2: ( ruleEString )
-            // InternalProofAssistant.g:1564:3: ruleEString
+            // InternalProofAssistant.g:1577:2: ( ruleEString )
+            // InternalProofAssistant.g:1578:3: ruleEString
             {
              before(grammarAccess.getProofAssistantAccess().getNameEStringParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -5186,21 +5272,21 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ProofAssistant__ComponentAssignment_3"
-    // InternalProofAssistant.g:1573:1: rule__ProofAssistant__ComponentAssignment_3 : ( ( ruleEString ) ) ;
+    // InternalProofAssistant.g:1587:1: rule__ProofAssistant__ComponentAssignment_3 : ( ( ruleEString ) ) ;
     public final void rule__ProofAssistant__ComponentAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalProofAssistant.g:1577:1: ( ( ( ruleEString ) ) )
-            // InternalProofAssistant.g:1578:2: ( ( ruleEString ) )
+            // InternalProofAssistant.g:1591:1: ( ( ( ruleEString ) ) )
+            // InternalProofAssistant.g:1592:2: ( ( ruleEString ) )
             {
-            // InternalProofAssistant.g:1578:2: ( ( ruleEString ) )
-            // InternalProofAssistant.g:1579:3: ( ruleEString )
+            // InternalProofAssistant.g:1592:2: ( ( ruleEString ) )
+            // InternalProofAssistant.g:1593:3: ( ruleEString )
             {
              before(grammarAccess.getProofAssistantAccess().getComponentEventBNamedCommentedComponentElementCrossReference_3_0()); 
-            // InternalProofAssistant.g:1580:3: ( ruleEString )
-            // InternalProofAssistant.g:1581:4: ruleEString
+            // InternalProofAssistant.g:1594:3: ( ruleEString )
+            // InternalProofAssistant.g:1595:4: ruleEString
             {
              before(grammarAccess.getProofAssistantAccess().getComponentEventBNamedCommentedComponentElementEStringParserRuleCall_3_0_1()); 
             pushFollow(FOLLOW_2);
@@ -5235,17 +5321,17 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__ProofAssistant__HintsAssignment_4_1"
-    // InternalProofAssistant.g:1592:1: rule__ProofAssistant__HintsAssignment_4_1 : ( ruleHint ) ;
+    // InternalProofAssistant.g:1606:1: rule__ProofAssistant__HintsAssignment_4_1 : ( ruleHint ) ;
     public final void rule__ProofAssistant__HintsAssignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalProofAssistant.g:1596:1: ( ( ruleHint ) )
-            // InternalProofAssistant.g:1597:2: ( ruleHint )
+            // InternalProofAssistant.g:1610:1: ( ( ruleHint ) )
+            // InternalProofAssistant.g:1611:2: ( ruleHint )
             {
-            // InternalProofAssistant.g:1597:2: ( ruleHint )
-            // InternalProofAssistant.g:1598:3: ruleHint
+            // InternalProofAssistant.g:1611:2: ( ruleHint )
+            // InternalProofAssistant.g:1612:3: ruleHint
             {
              before(grammarAccess.getProofAssistantAccess().getHintsHintParserRuleCall_4_1_0()); 
             pushFollow(FOLLOW_2);
@@ -5276,21 +5362,21 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__SelectionHint__ElementAssignment_1"
-    // InternalProofAssistant.g:1607:1: rule__SelectionHint__ElementAssignment_1 : ( ( ruleEString ) ) ;
+    // InternalProofAssistant.g:1621:1: rule__SelectionHint__ElementAssignment_1 : ( ( ruleEString ) ) ;
     public final void rule__SelectionHint__ElementAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalProofAssistant.g:1611:1: ( ( ( ruleEString ) ) )
-            // InternalProofAssistant.g:1612:2: ( ( ruleEString ) )
+            // InternalProofAssistant.g:1625:1: ( ( ( ruleEString ) ) )
+            // InternalProofAssistant.g:1626:2: ( ( ruleEString ) )
             {
-            // InternalProofAssistant.g:1612:2: ( ( ruleEString ) )
-            // InternalProofAssistant.g:1613:3: ( ruleEString )
+            // InternalProofAssistant.g:1626:2: ( ( ruleEString ) )
+            // InternalProofAssistant.g:1627:3: ( ruleEString )
             {
              before(grammarAccess.getSelectionHintAccess().getElementEventBElementCrossReference_1_0()); 
-            // InternalProofAssistant.g:1614:3: ( ruleEString )
-            // InternalProofAssistant.g:1615:4: ruleEString
+            // InternalProofAssistant.g:1628:3: ( ruleEString )
+            // InternalProofAssistant.g:1629:4: ruleEString
             {
              before(grammarAccess.getSelectionHintAccess().getElementEventBElementEStringParserRuleCall_1_0_1()); 
             pushFollow(FOLLOW_2);
@@ -5325,21 +5411,21 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__SelectionHint__SelectionsAssignment_3"
-    // InternalProofAssistant.g:1626:1: rule__SelectionHint__SelectionsAssignment_3 : ( ( ruleEString ) ) ;
+    // InternalProofAssistant.g:1640:1: rule__SelectionHint__SelectionsAssignment_3 : ( ( ruleEString ) ) ;
     public final void rule__SelectionHint__SelectionsAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalProofAssistant.g:1630:1: ( ( ( ruleEString ) ) )
-            // InternalProofAssistant.g:1631:2: ( ( ruleEString ) )
+            // InternalProofAssistant.g:1644:1: ( ( ( ruleEString ) ) )
+            // InternalProofAssistant.g:1645:2: ( ( ruleEString ) )
             {
-            // InternalProofAssistant.g:1631:2: ( ( ruleEString ) )
-            // InternalProofAssistant.g:1632:3: ( ruleEString )
+            // InternalProofAssistant.g:1645:2: ( ( ruleEString ) )
+            // InternalProofAssistant.g:1646:3: ( ruleEString )
             {
              before(grammarAccess.getSelectionHintAccess().getSelectionsEventBElementCrossReference_3_0()); 
-            // InternalProofAssistant.g:1633:3: ( ruleEString )
-            // InternalProofAssistant.g:1634:4: ruleEString
+            // InternalProofAssistant.g:1647:3: ( ruleEString )
+            // InternalProofAssistant.g:1648:4: ruleEString
             {
              before(grammarAccess.getSelectionHintAccess().getSelectionsEventBElementEStringParserRuleCall_3_0_1()); 
             pushFollow(FOLLOW_2);
@@ -5374,21 +5460,21 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__CasesHint__ElementAssignment_1"
-    // InternalProofAssistant.g:1645:1: rule__CasesHint__ElementAssignment_1 : ( ( ruleEString ) ) ;
+    // InternalProofAssistant.g:1659:1: rule__CasesHint__ElementAssignment_1 : ( ( ruleEString ) ) ;
     public final void rule__CasesHint__ElementAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalProofAssistant.g:1649:1: ( ( ( ruleEString ) ) )
-            // InternalProofAssistant.g:1650:2: ( ( ruleEString ) )
+            // InternalProofAssistant.g:1663:1: ( ( ( ruleEString ) ) )
+            // InternalProofAssistant.g:1664:2: ( ( ruleEString ) )
             {
-            // InternalProofAssistant.g:1650:2: ( ( ruleEString ) )
-            // InternalProofAssistant.g:1651:3: ( ruleEString )
+            // InternalProofAssistant.g:1664:2: ( ( ruleEString ) )
+            // InternalProofAssistant.g:1665:3: ( ruleEString )
             {
              before(grammarAccess.getCasesHintAccess().getElementEventBElementCrossReference_1_0()); 
-            // InternalProofAssistant.g:1652:3: ( ruleEString )
-            // InternalProofAssistant.g:1653:4: ruleEString
+            // InternalProofAssistant.g:1666:3: ( ruleEString )
+            // InternalProofAssistant.g:1667:4: ruleEString
             {
              before(grammarAccess.getCasesHintAccess().getElementEventBElementEStringParserRuleCall_1_0_1()); 
             pushFollow(FOLLOW_2);
@@ -5423,17 +5509,17 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__CasesHint__CasesAssignment_3"
-    // InternalProofAssistant.g:1664:1: rule__CasesHint__CasesAssignment_3 : ( ruleCase ) ;
+    // InternalProofAssistant.g:1678:1: rule__CasesHint__CasesAssignment_3 : ( ruleCase ) ;
     public final void rule__CasesHint__CasesAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalProofAssistant.g:1668:1: ( ( ruleCase ) )
-            // InternalProofAssistant.g:1669:2: ( ruleCase )
+            // InternalProofAssistant.g:1682:1: ( ( ruleCase ) )
+            // InternalProofAssistant.g:1683:2: ( ruleCase )
             {
-            // InternalProofAssistant.g:1669:2: ( ruleCase )
-            // InternalProofAssistant.g:1670:3: ruleCase
+            // InternalProofAssistant.g:1683:2: ( ruleCase )
+            // InternalProofAssistant.g:1684:3: ruleCase
             {
              before(grammarAccess.getCasesHintAccess().getCasesCaseParserRuleCall_3_0()); 
             pushFollow(FOLLOW_2);
@@ -5464,17 +5550,17 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Case__NameAssignment_0"
-    // InternalProofAssistant.g:1679:1: rule__Case__NameAssignment_0 : ( RULE_XLABEL ) ;
+    // InternalProofAssistant.g:1693:1: rule__Case__NameAssignment_0 : ( RULE_XLABEL ) ;
     public final void rule__Case__NameAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalProofAssistant.g:1683:1: ( ( RULE_XLABEL ) )
-            // InternalProofAssistant.g:1684:2: ( RULE_XLABEL )
+            // InternalProofAssistant.g:1697:1: ( ( RULE_XLABEL ) )
+            // InternalProofAssistant.g:1698:2: ( RULE_XLABEL )
             {
-            // InternalProofAssistant.g:1684:2: ( RULE_XLABEL )
-            // InternalProofAssistant.g:1685:3: RULE_XLABEL
+            // InternalProofAssistant.g:1698:2: ( RULE_XLABEL )
+            // InternalProofAssistant.g:1699:3: RULE_XLABEL
             {
              before(grammarAccess.getCaseAccess().getNameXLABELTerminalRuleCall_0_0()); 
             match(input,RULE_XLABEL,FOLLOW_2); 
@@ -5501,17 +5587,17 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
 
 
     // $ANTLR start "rule__Case__PredicateAssignment_1"
-    // InternalProofAssistant.g:1694:1: rule__Case__PredicateAssignment_1 : ( ruleXFormula ) ;
+    // InternalProofAssistant.g:1708:1: rule__Case__PredicateAssignment_1 : ( ruleXFormula ) ;
     public final void rule__Case__PredicateAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalProofAssistant.g:1698:1: ( ( ruleXFormula ) )
-            // InternalProofAssistant.g:1699:2: ( ruleXFormula )
+            // InternalProofAssistant.g:1712:1: ( ( ruleXFormula ) )
+            // InternalProofAssistant.g:1713:2: ( ruleXFormula )
             {
-            // InternalProofAssistant.g:1699:2: ( ruleXFormula )
-            // InternalProofAssistant.g:1700:3: ruleXFormula
+            // InternalProofAssistant.g:1713:2: ( ruleXFormula )
+            // InternalProofAssistant.g:1714:3: ruleXFormula
             {
              before(grammarAccess.getCaseAccess().getPredicateXFormulaParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -5555,9 +5641,11 @@ public class InternalProofAssistantParser extends AbstractInternalContentAssistP
     public static final BitSet FOLLOW_8 = new BitSet(new long[]{0x0000000000000000L,0x0004000000000000L});
     public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x0000000000000002L,0x0004000000000000L});
     public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0000000000000000L,0x0008000000000000L});
-    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x0000000000000000L,0x0010000000000000L});
-    public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x0000000000000080L});
-    public static final BitSet FOLLOW_13 = new BitSet(new long[]{0xFFFFFFFFFFFFF060L,0x00203FFFFFFFFFFFL});
-    public static final BitSet FOLLOW_14 = new BitSet(new long[]{0x0000000000000000L,0x0040000000000000L});
+    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x0000000000000032L});
+    public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x0000000000000000L,0x0010000000000000L});
+    public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x0000000000000080L});
+    public static final BitSet FOLLOW_14 = new BitSet(new long[]{0x0000000000000082L});
+    public static final BitSet FOLLOW_15 = new BitSet(new long[]{0xFFFFFFFFFFFFF060L,0x00203FFFFFFFFFFFL});
+    public static final BitSet FOLLOW_16 = new BitSet(new long[]{0x0000000000000000L,0x0040000000000000L});
 
 }

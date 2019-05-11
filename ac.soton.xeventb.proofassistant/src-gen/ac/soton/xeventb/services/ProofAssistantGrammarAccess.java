@@ -137,10 +137,10 @@ public class ProofAssistantGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//SelectionHint:
 		//	'for' element=[core::EventBElement|EString]
-		//	'selects' selections+=[core::EventBElement|EString];
+		//	'selects' selections+=[core::EventBElement|EString]+;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'for' element=[core::EventBElement|EString] 'selects' selections+=[core::EventBElement|EString]
+		//'for' element=[core::EventBElement|EString] 'selects' selections+=[core::EventBElement|EString]+
 		public Group getGroup() { return cGroup; }
 		
 		//'for'
@@ -158,7 +158,7 @@ public class ProofAssistantGrammarAccess extends AbstractGrammarElementFinder {
 		//'selects'
 		public Keyword getSelectsKeyword_2() { return cSelectsKeyword_2; }
 		
-		//selections+=[core::EventBElement|EString]
+		//selections+=[core::EventBElement|EString]+
 		public Assignment getSelectionsAssignment_3() { return cSelectionsAssignment_3; }
 		
 		//[core::EventBElement|EString]
@@ -180,10 +180,10 @@ public class ProofAssistantGrammarAccess extends AbstractGrammarElementFinder {
 		
 		//CasesHint:
 		//	'for' element=[core::EventBElement|EString]
-		//	'cases' cases+=Case;
+		//	'cases' cases+=Case+;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'for' element=[core::EventBElement|EString] 'cases' cases+=Case
+		//'for' element=[core::EventBElement|EString] 'cases' cases+=Case+
 		public Group getGroup() { return cGroup; }
 		
 		//'for'
@@ -201,7 +201,7 @@ public class ProofAssistantGrammarAccess extends AbstractGrammarElementFinder {
 		//'cases'
 		public Keyword getCasesKeyword_2() { return cCasesKeyword_2; }
 		
-		//cases+=Case
+		//cases+=Case+
 		public Assignment getCasesAssignment_3() { return cCasesAssignment_3; }
 		
 		//Case
@@ -909,7 +909,7 @@ public class ProofAssistantGrammarAccess extends AbstractGrammarElementFinder {
 	
 	//SelectionHint:
 	//	'for' element=[core::EventBElement|EString]
-	//	'selects' selections+=[core::EventBElement|EString];
+	//	'selects' selections+=[core::EventBElement|EString]+;
 	public SelectionHintElements getSelectionHintAccess() {
 		return pSelectionHint;
 	}
@@ -920,7 +920,7 @@ public class ProofAssistantGrammarAccess extends AbstractGrammarElementFinder {
 	
 	//CasesHint:
 	//	'for' element=[core::EventBElement|EString]
-	//	'cases' cases+=Case;
+	//	'cases' cases+=Case+;
 	public CasesHintElements getCasesHintAccess() {
 		return pCasesHint;
 	}

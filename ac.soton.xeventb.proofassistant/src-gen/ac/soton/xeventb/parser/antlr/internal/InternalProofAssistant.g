@@ -276,7 +276,7 @@ ruleSelectionHint returns [EObject current=null]
 					afterParserOrEnumRuleCall();
 				}
 			)
-		)
+		)+
 	)
 ;
 
@@ -338,7 +338,7 @@ ruleCasesHint returns [EObject current=null]
 					afterParserOrEnumRuleCall();
 				}
 			)
-		)
+		)+
 	)
 ;
 

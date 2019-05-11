@@ -731,7 +731,7 @@ public class InternalProofAssistantParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleSelectionHint"
-    // InternalProofAssistant.g:232:1: ruleSelectionHint returns [EObject current=null] : (otherlv_0= 'for' ( ( ruleEString ) ) otherlv_2= 'selects' ( ( ruleEString ) ) ) ;
+    // InternalProofAssistant.g:232:1: ruleSelectionHint returns [EObject current=null] : (otherlv_0= 'for' ( ( ruleEString ) ) otherlv_2= 'selects' ( ( ruleEString ) )+ ) ;
     public final EObject ruleSelectionHint() throws RecognitionException {
         EObject current = null;
 
@@ -742,11 +742,11 @@ public class InternalProofAssistantParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalProofAssistant.g:238:2: ( (otherlv_0= 'for' ( ( ruleEString ) ) otherlv_2= 'selects' ( ( ruleEString ) ) ) )
-            // InternalProofAssistant.g:239:2: (otherlv_0= 'for' ( ( ruleEString ) ) otherlv_2= 'selects' ( ( ruleEString ) ) )
+            // InternalProofAssistant.g:238:2: ( (otherlv_0= 'for' ( ( ruleEString ) ) otherlv_2= 'selects' ( ( ruleEString ) )+ ) )
+            // InternalProofAssistant.g:239:2: (otherlv_0= 'for' ( ( ruleEString ) ) otherlv_2= 'selects' ( ( ruleEString ) )+ )
             {
-            // InternalProofAssistant.g:239:2: (otherlv_0= 'for' ( ( ruleEString ) ) otherlv_2= 'selects' ( ( ruleEString ) ) )
-            // InternalProofAssistant.g:240:3: otherlv_0= 'for' ( ( ruleEString ) ) otherlv_2= 'selects' ( ( ruleEString ) )
+            // InternalProofAssistant.g:239:2: (otherlv_0= 'for' ( ( ruleEString ) ) otherlv_2= 'selects' ( ( ruleEString ) )+ )
+            // InternalProofAssistant.g:240:3: otherlv_0= 'for' ( ( ruleEString ) ) otherlv_2= 'selects' ( ( ruleEString ) )+
             {
             otherlv_0=(Token)match(input,16,FOLLOW_3); 
 
@@ -784,33 +784,56 @@ public class InternalProofAssistantParser extends AbstractInternalAntlrParser {
 
             			newLeafNode(otherlv_2, grammarAccess.getSelectionHintAccess().getSelectsKeyword_2());
             		
-            // InternalProofAssistant.g:264:3: ( ( ruleEString ) )
-            // InternalProofAssistant.g:265:4: ( ruleEString )
-            {
-            // InternalProofAssistant.g:265:4: ( ruleEString )
-            // InternalProofAssistant.g:266:5: ruleEString
-            {
+            // InternalProofAssistant.g:264:3: ( ( ruleEString ) )+
+            int cnt5=0;
+            loop5:
+            do {
+                int alt5=2;
+                int LA5_0 = input.LA(1);
 
-            					if (current==null) {
-            						current = createModelElement(grammarAccess.getSelectionHintRule());
-            					}
-            				
-
-            					newCompositeNode(grammarAccess.getSelectionHintAccess().getSelectionsEventBElementCrossReference_3_0());
-            				
-            pushFollow(FOLLOW_2);
-            ruleEString();
-
-            state._fsp--;
+                if ( ((LA5_0>=RULE_STRING && LA5_0<=RULE_ID)) ) {
+                    alt5=1;
+                }
 
 
-            					afterParserOrEnumRuleCall();
-            				
+                switch (alt5) {
+            	case 1 :
+            	    // InternalProofAssistant.g:265:4: ( ruleEString )
+            	    {
+            	    // InternalProofAssistant.g:265:4: ( ruleEString )
+            	    // InternalProofAssistant.g:266:5: ruleEString
+            	    {
 
-            }
+            	    					if (current==null) {
+            	    						current = createModelElement(grammarAccess.getSelectionHintRule());
+            	    					}
+            	    				
+
+            	    					newCompositeNode(grammarAccess.getSelectionHintAccess().getSelectionsEventBElementCrossReference_3_0());
+            	    				
+            	    pushFollow(FOLLOW_9);
+            	    ruleEString();
+
+            	    state._fsp--;
 
 
-            }
+            	    					afterParserOrEnumRuleCall();
+            	    				
+
+            	    }
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    if ( cnt5 >= 1 ) break loop5;
+                        EarlyExitException eee =
+                            new EarlyExitException(5, input);
+                        throw eee;
+                }
+                cnt5++;
+            } while (true);
 
 
             }
@@ -871,7 +894,7 @@ public class InternalProofAssistantParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleCasesHint"
-    // InternalProofAssistant.g:291:1: ruleCasesHint returns [EObject current=null] : (otherlv_0= 'for' ( ( ruleEString ) ) otherlv_2= 'cases' ( (lv_cases_3_0= ruleCase ) ) ) ;
+    // InternalProofAssistant.g:291:1: ruleCasesHint returns [EObject current=null] : (otherlv_0= 'for' ( ( ruleEString ) ) otherlv_2= 'cases' ( (lv_cases_3_0= ruleCase ) )+ ) ;
     public final EObject ruleCasesHint() throws RecognitionException {
         EObject current = null;
 
@@ -884,11 +907,11 @@ public class InternalProofAssistantParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalProofAssistant.g:297:2: ( (otherlv_0= 'for' ( ( ruleEString ) ) otherlv_2= 'cases' ( (lv_cases_3_0= ruleCase ) ) ) )
-            // InternalProofAssistant.g:298:2: (otherlv_0= 'for' ( ( ruleEString ) ) otherlv_2= 'cases' ( (lv_cases_3_0= ruleCase ) ) )
+            // InternalProofAssistant.g:297:2: ( (otherlv_0= 'for' ( ( ruleEString ) ) otherlv_2= 'cases' ( (lv_cases_3_0= ruleCase ) )+ ) )
+            // InternalProofAssistant.g:298:2: (otherlv_0= 'for' ( ( ruleEString ) ) otherlv_2= 'cases' ( (lv_cases_3_0= ruleCase ) )+ )
             {
-            // InternalProofAssistant.g:298:2: (otherlv_0= 'for' ( ( ruleEString ) ) otherlv_2= 'cases' ( (lv_cases_3_0= ruleCase ) ) )
-            // InternalProofAssistant.g:299:3: otherlv_0= 'for' ( ( ruleEString ) ) otherlv_2= 'cases' ( (lv_cases_3_0= ruleCase ) )
+            // InternalProofAssistant.g:298:2: (otherlv_0= 'for' ( ( ruleEString ) ) otherlv_2= 'cases' ( (lv_cases_3_0= ruleCase ) )+ )
+            // InternalProofAssistant.g:299:3: otherlv_0= 'for' ( ( ruleEString ) ) otherlv_2= 'cases' ( (lv_cases_3_0= ruleCase ) )+
             {
             otherlv_0=(Token)match(input,16,FOLLOW_3); 
 
@@ -908,7 +931,7 @@ public class InternalProofAssistantParser extends AbstractInternalAntlrParser {
 
             					newCompositeNode(grammarAccess.getCasesHintAccess().getElementEventBElementCrossReference_1_0());
             				
-            pushFollow(FOLLOW_9);
+            pushFollow(FOLLOW_10);
             ruleEString();
 
             state._fsp--;
@@ -922,40 +945,63 @@ public class InternalProofAssistantParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,18,FOLLOW_10); 
+            otherlv_2=(Token)match(input,18,FOLLOW_11); 
 
             			newLeafNode(otherlv_2, grammarAccess.getCasesHintAccess().getCasesKeyword_2());
             		
-            // InternalProofAssistant.g:323:3: ( (lv_cases_3_0= ruleCase ) )
-            // InternalProofAssistant.g:324:4: (lv_cases_3_0= ruleCase )
-            {
-            // InternalProofAssistant.g:324:4: (lv_cases_3_0= ruleCase )
-            // InternalProofAssistant.g:325:5: lv_cases_3_0= ruleCase
-            {
+            // InternalProofAssistant.g:323:3: ( (lv_cases_3_0= ruleCase ) )+
+            int cnt6=0;
+            loop6:
+            do {
+                int alt6=2;
+                int LA6_0 = input.LA(1);
 
-            					newCompositeNode(grammarAccess.getCasesHintAccess().getCasesCaseParserRuleCall_3_0());
-            				
-            pushFollow(FOLLOW_2);
-            lv_cases_3_0=ruleCase();
-
-            state._fsp--;
+                if ( (LA6_0==RULE_XLABEL) ) {
+                    alt6=1;
+                }
 
 
-            					if (current==null) {
-            						current = createModelElementForParent(grammarAccess.getCasesHintRule());
-            					}
-            					add(
-            						current,
-            						"cases",
-            						lv_cases_3_0,
-            						"ac.soton.xeventb.ProofAssistant.Case");
-            					afterParserOrEnumRuleCall();
-            				
+                switch (alt6) {
+            	case 1 :
+            	    // InternalProofAssistant.g:324:4: (lv_cases_3_0= ruleCase )
+            	    {
+            	    // InternalProofAssistant.g:324:4: (lv_cases_3_0= ruleCase )
+            	    // InternalProofAssistant.g:325:5: lv_cases_3_0= ruleCase
+            	    {
 
-            }
+            	    					newCompositeNode(grammarAccess.getCasesHintAccess().getCasesCaseParserRuleCall_3_0());
+            	    				
+            	    pushFollow(FOLLOW_12);
+            	    lv_cases_3_0=ruleCase();
+
+            	    state._fsp--;
 
 
-            }
+            	    					if (current==null) {
+            	    						current = createModelElementForParent(grammarAccess.getCasesHintRule());
+            	    					}
+            	    					add(
+            	    						current,
+            	    						"cases",
+            	    						lv_cases_3_0,
+            	    						"ac.soton.xeventb.ProofAssistant.Case");
+            	    					afterParserOrEnumRuleCall();
+            	    				
+
+            	    }
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    if ( cnt6 >= 1 ) break loop6;
+                        EarlyExitException eee =
+                            new EarlyExitException(6, input);
+                        throw eee;
+                }
+                cnt6++;
+            } while (true);
 
 
             }
@@ -1040,7 +1086,7 @@ public class InternalProofAssistantParser extends AbstractInternalAntlrParser {
             // InternalProofAssistant.g:362:4: (lv_name_0_0= RULE_XLABEL )
             // InternalProofAssistant.g:363:5: lv_name_0_0= RULE_XLABEL
             {
-            lv_name_0_0=(Token)match(input,RULE_XLABEL,FOLLOW_11); 
+            lv_name_0_0=(Token)match(input,RULE_XLABEL,FOLLOW_13); 
 
             					newLeafNode(lv_name_0_0, grammarAccess.getCaseAccess().getNameXLABELTerminalRuleCall_0_0());
             				
@@ -1171,10 +1217,10 @@ public class InternalProofAssistantParser extends AbstractInternalAntlrParser {
             // InternalProofAssistant.g:416:2: (this_EVENTB_IDENTIFIER_KEYWORD_0= ruleEVENTB_IDENTIFIER_KEYWORD | this_EVENTB_PREDICATE_SYMBOLS_1= ruleEVENTB_PREDICATE_SYMBOLS | this_EVENTB_EXPRESSION_SYMBOLS_2= ruleEVENTB_EXPRESSION_SYMBOLS | this_ID_3= RULE_ID | this_INT_4= RULE_INT )+
             {
             // InternalProofAssistant.g:416:2: (this_EVENTB_IDENTIFIER_KEYWORD_0= ruleEVENTB_IDENTIFIER_KEYWORD | this_EVENTB_PREDICATE_SYMBOLS_1= ruleEVENTB_PREDICATE_SYMBOLS | this_EVENTB_EXPRESSION_SYMBOLS_2= ruleEVENTB_EXPRESSION_SYMBOLS | this_ID_3= RULE_ID | this_INT_4= RULE_INT )+
-            int cnt5=0;
-            loop5:
+            int cnt7=0;
+            loop7:
             do {
-                int alt5=6;
+                int alt7=6;
                 switch ( input.LA(1) ) {
                 case 19:
                 case 20:
@@ -1200,7 +1246,7 @@ public class InternalProofAssistantParser extends AbstractInternalAntlrParser {
                 case 40:
                 case 41:
                     {
-                    alt5=1;
+                    alt7=1;
                     }
                     break;
                 case 42:
@@ -1235,7 +1281,7 @@ public class InternalProofAssistantParser extends AbstractInternalAntlrParser {
                 case 71:
                 case 72:
                     {
-                    alt5=2;
+                    alt7=2;
                     }
                     break;
                 case 73:
@@ -1284,30 +1330,30 @@ public class InternalProofAssistantParser extends AbstractInternalAntlrParser {
                 case 117:
                 case 118:
                     {
-                    alt5=3;
+                    alt7=3;
                     }
                     break;
                 case RULE_ID:
                     {
-                    alt5=4;
+                    alt7=4;
                     }
                     break;
                 case RULE_INT:
                     {
-                    alt5=5;
+                    alt7=5;
                     }
                     break;
 
                 }
 
-                switch (alt5) {
+                switch (alt7) {
             	case 1 :
             	    // InternalProofAssistant.g:417:3: this_EVENTB_IDENTIFIER_KEYWORD_0= ruleEVENTB_IDENTIFIER_KEYWORD
             	    {
 
             	    			newCompositeNode(grammarAccess.getXFormulaAccess().getEVENTB_IDENTIFIER_KEYWORDParserRuleCall_0());
             	    		
-            	    pushFollow(FOLLOW_12);
+            	    pushFollow(FOLLOW_14);
             	    this_EVENTB_IDENTIFIER_KEYWORD_0=ruleEVENTB_IDENTIFIER_KEYWORD();
 
             	    state._fsp--;
@@ -1327,7 +1373,7 @@ public class InternalProofAssistantParser extends AbstractInternalAntlrParser {
 
             	    			newCompositeNode(grammarAccess.getXFormulaAccess().getEVENTB_PREDICATE_SYMBOLSParserRuleCall_1());
             	    		
-            	    pushFollow(FOLLOW_12);
+            	    pushFollow(FOLLOW_14);
             	    this_EVENTB_PREDICATE_SYMBOLS_1=ruleEVENTB_PREDICATE_SYMBOLS();
 
             	    state._fsp--;
@@ -1347,7 +1393,7 @@ public class InternalProofAssistantParser extends AbstractInternalAntlrParser {
 
             	    			newCompositeNode(grammarAccess.getXFormulaAccess().getEVENTB_EXPRESSION_SYMBOLSParserRuleCall_2());
             	    		
-            	    pushFollow(FOLLOW_12);
+            	    pushFollow(FOLLOW_14);
             	    this_EVENTB_EXPRESSION_SYMBOLS_2=ruleEVENTB_EXPRESSION_SYMBOLS();
 
             	    state._fsp--;
@@ -1364,7 +1410,7 @@ public class InternalProofAssistantParser extends AbstractInternalAntlrParser {
             	case 4 :
             	    // InternalProofAssistant.g:450:3: this_ID_3= RULE_ID
             	    {
-            	    this_ID_3=(Token)match(input,RULE_ID,FOLLOW_12); 
+            	    this_ID_3=(Token)match(input,RULE_ID,FOLLOW_14); 
 
             	    			current.merge(this_ID_3);
             	    		
@@ -1377,7 +1423,7 @@ public class InternalProofAssistantParser extends AbstractInternalAntlrParser {
             	case 5 :
             	    // InternalProofAssistant.g:458:3: this_INT_4= RULE_INT
             	    {
-            	    this_INT_4=(Token)match(input,RULE_INT,FOLLOW_12); 
+            	    this_INT_4=(Token)match(input,RULE_INT,FOLLOW_14); 
 
             	    			current.merge(this_INT_4);
             	    		
@@ -1389,12 +1435,12 @@ public class InternalProofAssistantParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    if ( cnt5 >= 1 ) break loop5;
+            	    if ( cnt7 >= 1 ) break loop7;
                         EarlyExitException eee =
-                            new EarlyExitException(5, input);
+                            new EarlyExitException(7, input);
                         throw eee;
                 }
-                cnt5++;
+                cnt7++;
             } while (true);
 
 
@@ -1467,131 +1513,131 @@ public class InternalProofAssistantParser extends AbstractInternalAntlrParser {
             // InternalProofAssistant.g:483:2: (kw= 'BOOL' | kw= 'FALSE' | kw= 'TRUE' | kw= 'bool' | kw= 'card' | kw= 'dom' | kw= 'finite' | kw= 'id' | kw= 'inter' | kw= 'max' | kw= 'min' | kw= 'mod' | kw= 'pred' | kw= 'prj1' | kw= 'prj2' | kw= 'ran' | kw= 'succ' | kw= 'union' | kw= '\\u21151' | kw= '\\u2115' | kw= '\\u21191' | kw= '\\u2119' | kw= '\\u2124' )
             {
             // InternalProofAssistant.g:483:2: (kw= 'BOOL' | kw= 'FALSE' | kw= 'TRUE' | kw= 'bool' | kw= 'card' | kw= 'dom' | kw= 'finite' | kw= 'id' | kw= 'inter' | kw= 'max' | kw= 'min' | kw= 'mod' | kw= 'pred' | kw= 'prj1' | kw= 'prj2' | kw= 'ran' | kw= 'succ' | kw= 'union' | kw= '\\u21151' | kw= '\\u2115' | kw= '\\u21191' | kw= '\\u2119' | kw= '\\u2124' )
-            int alt6=23;
+            int alt8=23;
             switch ( input.LA(1) ) {
             case 19:
                 {
-                alt6=1;
+                alt8=1;
                 }
                 break;
             case 20:
                 {
-                alt6=2;
+                alt8=2;
                 }
                 break;
             case 21:
                 {
-                alt6=3;
+                alt8=3;
                 }
                 break;
             case 22:
                 {
-                alt6=4;
+                alt8=4;
                 }
                 break;
             case 23:
                 {
-                alt6=5;
+                alt8=5;
                 }
                 break;
             case 24:
                 {
-                alt6=6;
+                alt8=6;
                 }
                 break;
             case 25:
                 {
-                alt6=7;
+                alt8=7;
                 }
                 break;
             case 26:
                 {
-                alt6=8;
+                alt8=8;
                 }
                 break;
             case 27:
                 {
-                alt6=9;
+                alt8=9;
                 }
                 break;
             case 28:
                 {
-                alt6=10;
+                alt8=10;
                 }
                 break;
             case 29:
                 {
-                alt6=11;
+                alt8=11;
                 }
                 break;
             case 30:
                 {
-                alt6=12;
+                alt8=12;
                 }
                 break;
             case 31:
                 {
-                alt6=13;
+                alt8=13;
                 }
                 break;
             case 32:
                 {
-                alt6=14;
+                alt8=14;
                 }
                 break;
             case 33:
                 {
-                alt6=15;
+                alt8=15;
                 }
                 break;
             case 34:
                 {
-                alt6=16;
+                alt8=16;
                 }
                 break;
             case 35:
                 {
-                alt6=17;
+                alt8=17;
                 }
                 break;
             case 36:
                 {
-                alt6=18;
+                alt8=18;
                 }
                 break;
             case 37:
                 {
-                alt6=19;
+                alt8=19;
                 }
                 break;
             case 38:
                 {
-                alt6=20;
+                alt8=20;
                 }
                 break;
             case 39:
                 {
-                alt6=21;
+                alt8=21;
                 }
                 break;
             case 40:
                 {
-                alt6=22;
+                alt8=22;
                 }
                 break;
             case 41:
                 {
-                alt6=23;
+                alt8=23;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 6, 0, input);
+                    new NoViableAltException("", 8, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt6) {
+            switch (alt8) {
                 case 1 :
                     // InternalProofAssistant.g:484:3: kw= 'BOOL'
                     {
@@ -1918,171 +1964,171 @@ public class InternalProofAssistantParser extends AbstractInternalAntlrParser {
             // InternalProofAssistant.g:639:2: (kw= '(' | kw= ')' | kw= '\\u21D4' | kw= '\\u21D2' | kw= '\\u2227' | kw= '&' | kw= '\\u2228' | kw= '\\u00AC' | kw= '\\u22A4' | kw= '\\u22A5' | kw= '\\u2200' | kw= '!' | kw= '\\u2203' | kw= '#' | kw= ',' | kw= '\\u00B7' | kw= '.' | kw= '=' | kw= '\\u2260' | kw= '\\u2264' | kw= '<' | kw= '\\u2265' | kw= '>' | kw= '\\u2208' | kw= ':' | kw= '\\u2209' | kw= '\\u2282' | kw= '\\u2284' | kw= '\\u2286' | kw= '\\u2288' | kw= 'partition' )
             {
             // InternalProofAssistant.g:639:2: (kw= '(' | kw= ')' | kw= '\\u21D4' | kw= '\\u21D2' | kw= '\\u2227' | kw= '&' | kw= '\\u2228' | kw= '\\u00AC' | kw= '\\u22A4' | kw= '\\u22A5' | kw= '\\u2200' | kw= '!' | kw= '\\u2203' | kw= '#' | kw= ',' | kw= '\\u00B7' | kw= '.' | kw= '=' | kw= '\\u2260' | kw= '\\u2264' | kw= '<' | kw= '\\u2265' | kw= '>' | kw= '\\u2208' | kw= ':' | kw= '\\u2209' | kw= '\\u2282' | kw= '\\u2284' | kw= '\\u2286' | kw= '\\u2288' | kw= 'partition' )
-            int alt7=31;
+            int alt9=31;
             switch ( input.LA(1) ) {
             case 42:
                 {
-                alt7=1;
+                alt9=1;
                 }
                 break;
             case 43:
                 {
-                alt7=2;
+                alt9=2;
                 }
                 break;
             case 44:
                 {
-                alt7=3;
+                alt9=3;
                 }
                 break;
             case 45:
                 {
-                alt7=4;
+                alt9=4;
                 }
                 break;
             case 46:
                 {
-                alt7=5;
+                alt9=5;
                 }
                 break;
             case 47:
                 {
-                alt7=6;
+                alt9=6;
                 }
                 break;
             case 48:
                 {
-                alt7=7;
+                alt9=7;
                 }
                 break;
             case 49:
                 {
-                alt7=8;
+                alt9=8;
                 }
                 break;
             case 50:
                 {
-                alt7=9;
+                alt9=9;
                 }
                 break;
             case 51:
                 {
-                alt7=10;
+                alt9=10;
                 }
                 break;
             case 52:
                 {
-                alt7=11;
+                alt9=11;
                 }
                 break;
             case 53:
                 {
-                alt7=12;
+                alt9=12;
                 }
                 break;
             case 54:
                 {
-                alt7=13;
+                alt9=13;
                 }
                 break;
             case 55:
                 {
-                alt7=14;
+                alt9=14;
                 }
                 break;
             case 56:
                 {
-                alt7=15;
+                alt9=15;
                 }
                 break;
             case 57:
                 {
-                alt7=16;
+                alt9=16;
                 }
                 break;
             case 58:
                 {
-                alt7=17;
+                alt9=17;
                 }
                 break;
             case 59:
                 {
-                alt7=18;
+                alt9=18;
                 }
                 break;
             case 60:
                 {
-                alt7=19;
+                alt9=19;
                 }
                 break;
             case 61:
                 {
-                alt7=20;
+                alt9=20;
                 }
                 break;
             case 62:
                 {
-                alt7=21;
+                alt9=21;
                 }
                 break;
             case 63:
                 {
-                alt7=22;
+                alt9=22;
                 }
                 break;
             case 64:
                 {
-                alt7=23;
+                alt9=23;
                 }
                 break;
             case 65:
                 {
-                alt7=24;
+                alt9=24;
                 }
                 break;
             case 66:
                 {
-                alt7=25;
+                alt9=25;
                 }
                 break;
             case 67:
                 {
-                alt7=26;
+                alt9=26;
                 }
                 break;
             case 68:
                 {
-                alt7=27;
+                alt9=27;
                 }
                 break;
             case 69:
                 {
-                alt7=28;
+                alt9=28;
                 }
                 break;
             case 70:
                 {
-                alt7=29;
+                alt9=29;
                 }
                 break;
             case 71:
                 {
-                alt7=30;
+                alt9=30;
                 }
                 break;
             case 72:
                 {
-                alt7=31;
+                alt9=31;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 7, 0, input);
+                    new NoViableAltException("", 9, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt7) {
+            switch (alt9) {
                 case 1 :
                     // InternalProofAssistant.g:640:3: kw= '('
                     {
@@ -2497,241 +2543,241 @@ public class InternalProofAssistantParser extends AbstractInternalAntlrParser {
             // InternalProofAssistant.g:843:2: (kw= '\\u2194' | kw= '\\uE100' | kw= '\\uE101' | kw= '\\uE102' | kw= '\\u21F8' | kw= '\\u2192' | kw= '\\u2914' | kw= '\\u21A3' | kw= '\\u2900' | kw= '\\u21A0' | kw= '\\u2916' | kw= '{' | kw= '}' | kw= '\\u21A6' | kw= '\\u2205' | kw= '\\u2229' | kw= '\\u222A' | kw= '\\u2216' | kw= '\\u00D7' | kw= '[' | kw= ']' | kw= '\\uE103' | kw= '\\u2218' | kw= ';' | kw= '\\u2297' | kw= '\\u2225' | kw= '\\u223C' | kw= '\\u25C1' | kw= '\\u2A64' | kw= '\\u25B7' | kw= '\\u2A65' | kw= '\\u03BB' | (kw= '%' kw= '\\u22C2' ) | kw= '\\u22C3' | kw= '\\u2223' | kw= '\\u2025' | kw= '+' | kw= '\\u2212' | kw= '-' | kw= '\\u2217' | kw= '*' | kw= '\\u00F7' | kw= '/' | kw= '^' | kw= '\\\\' )
             {
             // InternalProofAssistant.g:843:2: (kw= '\\u2194' | kw= '\\uE100' | kw= '\\uE101' | kw= '\\uE102' | kw= '\\u21F8' | kw= '\\u2192' | kw= '\\u2914' | kw= '\\u21A3' | kw= '\\u2900' | kw= '\\u21A0' | kw= '\\u2916' | kw= '{' | kw= '}' | kw= '\\u21A6' | kw= '\\u2205' | kw= '\\u2229' | kw= '\\u222A' | kw= '\\u2216' | kw= '\\u00D7' | kw= '[' | kw= ']' | kw= '\\uE103' | kw= '\\u2218' | kw= ';' | kw= '\\u2297' | kw= '\\u2225' | kw= '\\u223C' | kw= '\\u25C1' | kw= '\\u2A64' | kw= '\\u25B7' | kw= '\\u2A65' | kw= '\\u03BB' | (kw= '%' kw= '\\u22C2' ) | kw= '\\u22C3' | kw= '\\u2223' | kw= '\\u2025' | kw= '+' | kw= '\\u2212' | kw= '-' | kw= '\\u2217' | kw= '*' | kw= '\\u00F7' | kw= '/' | kw= '^' | kw= '\\\\' )
-            int alt8=45;
+            int alt10=45;
             switch ( input.LA(1) ) {
             case 73:
                 {
-                alt8=1;
+                alt10=1;
                 }
                 break;
             case 74:
                 {
-                alt8=2;
+                alt10=2;
                 }
                 break;
             case 75:
                 {
-                alt8=3;
+                alt10=3;
                 }
                 break;
             case 76:
                 {
-                alt8=4;
+                alt10=4;
                 }
                 break;
             case 77:
                 {
-                alt8=5;
+                alt10=5;
                 }
                 break;
             case 78:
                 {
-                alt8=6;
+                alt10=6;
                 }
                 break;
             case 79:
                 {
-                alt8=7;
+                alt10=7;
                 }
                 break;
             case 80:
                 {
-                alt8=8;
+                alt10=8;
                 }
                 break;
             case 81:
                 {
-                alt8=9;
+                alt10=9;
                 }
                 break;
             case 82:
                 {
-                alt8=10;
+                alt10=10;
                 }
                 break;
             case 83:
                 {
-                alt8=11;
+                alt10=11;
                 }
                 break;
             case 84:
                 {
-                alt8=12;
+                alt10=12;
                 }
                 break;
             case 85:
                 {
-                alt8=13;
+                alt10=13;
                 }
                 break;
             case 86:
                 {
-                alt8=14;
+                alt10=14;
                 }
                 break;
             case 87:
                 {
-                alt8=15;
+                alt10=15;
                 }
                 break;
             case 88:
                 {
-                alt8=16;
+                alt10=16;
                 }
                 break;
             case 89:
                 {
-                alt8=17;
+                alt10=17;
                 }
                 break;
             case 90:
                 {
-                alt8=18;
+                alt10=18;
                 }
                 break;
             case 91:
                 {
-                alt8=19;
+                alt10=19;
                 }
                 break;
             case 92:
                 {
-                alt8=20;
+                alt10=20;
                 }
                 break;
             case 93:
                 {
-                alt8=21;
+                alt10=21;
                 }
                 break;
             case 94:
                 {
-                alt8=22;
+                alt10=22;
                 }
                 break;
             case 95:
                 {
-                alt8=23;
+                alt10=23;
                 }
                 break;
             case 96:
                 {
-                alt8=24;
+                alt10=24;
                 }
                 break;
             case 97:
                 {
-                alt8=25;
+                alt10=25;
                 }
                 break;
             case 98:
                 {
-                alt8=26;
+                alt10=26;
                 }
                 break;
             case 99:
                 {
-                alt8=27;
+                alt10=27;
                 }
                 break;
             case 100:
                 {
-                alt8=28;
+                alt10=28;
                 }
                 break;
             case 101:
                 {
-                alt8=29;
+                alt10=29;
                 }
                 break;
             case 102:
                 {
-                alt8=30;
+                alt10=30;
                 }
                 break;
             case 103:
                 {
-                alt8=31;
+                alt10=31;
                 }
                 break;
             case 104:
                 {
-                alt8=32;
+                alt10=32;
                 }
                 break;
             case 105:
                 {
-                alt8=33;
+                alt10=33;
                 }
                 break;
             case 107:
                 {
-                alt8=34;
+                alt10=34;
                 }
                 break;
             case 108:
                 {
-                alt8=35;
+                alt10=35;
                 }
                 break;
             case 109:
                 {
-                alt8=36;
+                alt10=36;
                 }
                 break;
             case 110:
                 {
-                alt8=37;
+                alt10=37;
                 }
                 break;
             case 111:
                 {
-                alt8=38;
+                alt10=38;
                 }
                 break;
             case 112:
                 {
-                alt8=39;
+                alt10=39;
                 }
                 break;
             case 113:
                 {
-                alt8=40;
+                alt10=40;
                 }
                 break;
             case 114:
                 {
-                alt8=41;
+                alt10=41;
                 }
                 break;
             case 115:
                 {
-                alt8=42;
+                alt10=42;
                 }
                 break;
             case 116:
                 {
-                alt8=43;
+                alt10=43;
                 }
                 break;
             case 117:
                 {
-                alt8=44;
+                alt10=44;
                 }
                 break;
             case 118:
                 {
-                alt8=45;
+                alt10=45;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 8, 0, input);
+                    new NoViableAltException("", 10, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt8) {
+            switch (alt10) {
                 case 1 :
                     // InternalProofAssistant.g:844:3: kw= '\\u2194'
                     {
@@ -3090,7 +3136,7 @@ public class InternalProofAssistantParser extends AbstractInternalAntlrParser {
                     // InternalProofAssistant.g:1036:3: (kw= '%' kw= '\\u22C2' )
                     // InternalProofAssistant.g:1037:4: kw= '%' kw= '\\u22C2'
                     {
-                    kw=(Token)match(input,105,FOLLOW_13); 
+                    kw=(Token)match(input,105,FOLLOW_15); 
 
                     				current.merge(kw);
                     				newLeafNode(kw, grammarAccess.getEVENTB_EXPRESSION_SYMBOLSAccess().getPercentSignKeyword_32_0());
@@ -3272,10 +3318,12 @@ public class InternalProofAssistantParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_6 = new BitSet(new long[]{0x0000000000010000L});
     public static final BitSet FOLLOW_7 = new BitSet(new long[]{0x000000000001C000L});
     public static final BitSet FOLLOW_8 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0xFFFFFFFFFFF800A0L,0x007FFBFFFFFFFFFFL});
-    public static final BitSet FOLLOW_12 = new BitSet(new long[]{0xFFFFFFFFFFF800A2L,0x007FFBFFFFFFFFFFL});
-    public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x0000000000000000L,0x0000040000000000L});
+    public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x0000000000000032L});
+    public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x0000000000000042L});
+    public static final BitSet FOLLOW_13 = new BitSet(new long[]{0xFFFFFFFFFFF800A0L,0x007FFBFFFFFFFFFFL});
+    public static final BitSet FOLLOW_14 = new BitSet(new long[]{0xFFFFFFFFFFF800A2L,0x007FFBFFFFFFFFFFL});
+    public static final BitSet FOLLOW_15 = new BitSet(new long[]{0x0000000000000000L,0x0000040000000000L});
 
 }

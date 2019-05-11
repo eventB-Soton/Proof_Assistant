@@ -80,7 +80,7 @@ public class ProofAssistantSemanticSequencer extends AbstractDelegatingSemanticS
 	 *     CasesHint returns CasesHint
 	 *
 	 * Constraint:
-	 *     (element=[EventBElement|EString] cases+=Case)
+	 *     (element=[EventBElement|EString] cases+=Case+)
 	 */
 	protected void sequence_CasesHint(ISerializationContext context, CasesHint semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -105,7 +105,7 @@ public class ProofAssistantSemanticSequencer extends AbstractDelegatingSemanticS
 	 *     SelectionHint returns SelectionHint
 	 *
 	 * Constraint:
-	 *     (element=[EventBElement|EString] selections+=[EventBElement|EString])
+	 *     (element=[EventBElement|EString] selections+=[EventBElement|EString]+)
 	 */
 	protected void sequence_SelectionHint(ISerializationContext context, SelectionHint semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
