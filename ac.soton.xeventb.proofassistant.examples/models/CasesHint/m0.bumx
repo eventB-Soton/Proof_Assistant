@@ -1,4 +1,5 @@
 machine m0
+contains pa : m0
 variables a b c
 invariants
 	@case0_1: a ≤ c
