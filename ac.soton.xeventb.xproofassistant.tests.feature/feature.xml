@@ -10,12 +10,12 @@
     Contributors:
         University of Southampton - initial API and implementation
  -->
-
 <feature
       id="ac.soton.xeventb.xproofassistant.tests.feature"
       label="%featureName"
       version="0.1.0.qualifier"
       provider-name="%featureVendor"
+      plugin="ac.soton.xeventb.xproofassistant.branding"
       license-feature="org.rodinp.license"
       license-feature-version="1.0.0.release">
 
