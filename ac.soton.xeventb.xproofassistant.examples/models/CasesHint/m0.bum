@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" version="5">
-<org.eventb.core.variable name="_aI7-kHPZEemaMIs_MLtH-g" org.eventb.core.generated="false" org.eventb.core.identifier="a"/>
-<org.eventb.core.variable name="_aI8loHPZEemaMIs_MLtH-g" org.eventb.core.generated="false" org.eventb.core.identifier="b"/>
-<org.eventb.core.variable name="_aI9MsHPZEemaMIs_MLtH-g" org.eventb.core.generated="false" org.eventb.core.identifier="c"/>
-<org.eventb.core.invariant name="_aI9MsXPZEemaMIs_MLtH-g" org.eventb.core.generated="false" org.eventb.core.label="case0_1" org.eventb.core.predicate="a ≤ c"/>
-<org.eventb.core.invariant name="_aI9zwHPZEemaMIs_MLtH-g" org.eventb.core.generated="false" org.eventb.core.label="case0_2" org.eventb.core.predicate="a ≠ 1 ⇒ b = a + 1"/>
-<org.eventb.core.invariant name="_aI-a0HPZEemaMIs_MLtH-g" org.eventb.core.generated="false" org.eventb.core.label="case0_3" org.eventb.core.predicate="a = 1 ⇒ b ≤ c"/>
-<org.eventb.core.event name="_aI-a0XPZEemaMIs_MLtH-g" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="INITIALISATION">
-<org.eventb.core.action name="_aI_B4HPZEemaMIs_MLtH-g" org.eventb.core.assignment="a, b, c ≔ 0, 1, 0" org.eventb.core.generated="false" org.eventb.core.label="act0"/>
+<org.eventb.core.variable name="_YzPPwHQBEem0dLfhDmwNCQ" org.eventb.core.generated="false" org.eventb.core.identifier="a"/>
+<org.eventb.core.variable name="_YzPPwXQBEem0dLfhDmwNCQ" org.eventb.core.generated="false" org.eventb.core.identifier="b"/>
+<org.eventb.core.variable name="_YzP20HQBEem0dLfhDmwNCQ" org.eventb.core.generated="false" org.eventb.core.identifier="c"/>
+<org.eventb.core.invariant name="_YzP20XQBEem0dLfhDmwNCQ" org.eventb.core.generated="false" org.eventb.core.label="case0_1" org.eventb.core.predicate="a ≤ c"/>
+<org.eventb.core.invariant name="_YzP20nQBEem0dLfhDmwNCQ" org.eventb.core.generated="false" org.eventb.core.label="case0_2" org.eventb.core.predicate="a ≠ 1 ⇒ b = a + 1"/>
+<org.eventb.core.invariant name="_YzQd4HQBEem0dLfhDmwNCQ" org.eventb.core.generated="false" org.eventb.core.label="case0_3" org.eventb.core.predicate="a = 1 ⇒ b ≤ c"/>
+<org.eventb.core.event name="_YzQd4XQBEem0dLfhDmwNCQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="true" org.eventb.core.label="Set_case1" org.eventb.emf.persistence.generator_ID="http://soton.ac.uk/models/eventb/proofassistant/2019::ProofAssistant::m0" org.eventb.emf.persistence.priority="1">
+<org.eventb.core.guard name="_YzQd4nQBEem0dLfhDmwNCQ" org.eventb.core.generated="false" org.eventb.core.label="_pa_case1" org.eventb.core.predicate="a = 1"/>
+<org.eventb.core.action name="_YzRE8HQBEem0dLfhDmwNCQ" org.eventb.core.assignment="a ≔ b − 1" org.eventb.core.generated="false" org.eventb.core.label="act0"/>
 </org.eventb.core.event>
-<org.eventb.core.event name="_aI_o8HPZEemaMIs_MLtH-g" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="Set">
-<org.eventb.core.action name="_aI_o8XPZEemaMIs_MLtH-g" org.eventb.core.assignment="a ≔ b − 1" org.eventb.core.generated="false" org.eventb.core.label="act0"/>
+<org.eventb.core.event name="_YzRE8XQBEem0dLfhDmwNCQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="true" org.eventb.core.label="Set_OTHER" org.eventb.emf.persistence.generator_ID="http://soton.ac.uk/models/eventb/proofassistant/2019::ProofAssistant::m0" org.eventb.emf.persistence.priority="1">
+<org.eventb.core.guard name="_YzRsAHQBEem0dLfhDmwNCQ" org.eventb.core.generated="false" org.eventb.core.label="_pa_NOT_case1" org.eventb.core.predicate="¬(a = 1)"/>
+<org.eventb.core.action name="_YzRsAXQBEem0dLfhDmwNCQ" org.eventb.core.assignment="a ≔ b − 1" org.eventb.core.generated="false" org.eventb.core.label="act0"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_YzRsAnQBEem0dLfhDmwNCQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_YzSTEHQBEem0dLfhDmwNCQ" org.eventb.core.assignment="a, b, c ≔ 0, 1, 0" org.eventb.core.generated="false" org.eventb.core.label="act0"/>
 </org.eventb.core.event>
 </org.eventb.core.machineFile>

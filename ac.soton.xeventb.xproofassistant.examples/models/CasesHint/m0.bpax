@@ -3,4 +3,6 @@ hints
 	for "CasesHint.m0.Set"
 	cases
 		@case1: a = 1
+//		@case2: a = 2
+//		@case3: a = 3
 end
