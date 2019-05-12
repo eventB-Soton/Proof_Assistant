@@ -1,3 +1,14 @@
+/*******************************************************************************
+ * Copyright (c) 2019 University of Southampton.
+ *
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *
+ * Contributors:
+ *     University of Southampton - initial API and implementation
+ *******************************************************************************/
 package ac.soton.eventb.emf.proofassistant.generator.rules;
 
 import java.util.ArrayList;
@@ -17,7 +28,6 @@ import ac.soton.emf.translator.TranslationDescriptor;
 import ac.soton.emf.translator.configuration.AbstractRule;
 import ac.soton.emf.translator.configuration.IRule;
 import ac.soton.emf.translator.eventb.utils.Make;
-import ac.soton.eventb.emf.proofassistant.ProofAssistant;
 import ac.soton.eventb.emf.proofassistant.SelectionHint;
 
 public class SelectionHintRule extends AbstractRule implements IRule {
