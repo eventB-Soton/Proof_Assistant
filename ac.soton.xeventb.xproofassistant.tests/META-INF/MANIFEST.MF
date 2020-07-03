@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: ac.soton.xeventb.xproofassistant.tests
+Bundle-ManifestVersion: 2
+Bundle-Name: %Bundle-Name
+Bundle-Vendor: %Bundle-Vendor
+Bundle-Version: 0.1.0.qualifier
+Bundle-SymbolicName: ac.soton.xeventb.xproofassistant.tests; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: ac.soton.xeventb.xproofassistant;bundle-version="[0.1.0,1.0.0)",
+ ac.soton.eventb.emf.proofassistant;bundle-version="[0.1.0,1.0.0)",
+ org.junit;bundle-version="[4.12.0,5.0.0)",
+ org.eclipse.xtext.testing;bundle-version="[2.16.0,3.0.0)",
+ org.eclipse.xtext.xbase.testing;bundle-version="[2.16.0,3.0.0)",
+ org.eclipse.xtext.xbase.lib;bundle-version="[2.14.0,3.0.0)",
+ ac.soton.eventb.emf.diagrams;bundle-version="[4.1.1,5.0.0)",
+ org.eventb.emf.core;bundle-version="[5.0.0,6.0.0)"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: ac.soton.xeventb.xproofassistant.tests;x-internal:=true

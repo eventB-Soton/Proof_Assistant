@@ -1,0 +1,5 @@
+ProofAssistant m0 supports "SelectionHint.m0"
+hints
+	for "SelectionHint.m0.Set"
+	selects "SelectionHint.m0.hypSel0_2"
+end

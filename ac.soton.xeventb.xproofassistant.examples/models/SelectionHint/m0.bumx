@@ -1,0 +1,20 @@
+machine m0
+contains pa: m0
+variables x y
+invariants
+	@hypSel0_1: x ∈ ℕ
+	@hypSel0_2: x ≠ 0 ⇒ y ∈ ℕ
+events
+	event INITIALISATION
+	then
+		@act1: x ≔ 0
+		@act2: y ≔ 0
+	end
+	
+	event Set
+	where
+		@grd1: x ∈ {1, 2}
+	then
+		@act1: x ≔ y + 1
+	end
+end

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="proofassistant" nsURI="http://soton.ac.uk/models/eventb/proofassistant/2019"
+    nsPrefix="proofassistant">
+  <eClassifiers xsi:type="ecore:EClass" name="ProofAssistant" eSuperTypes="../../org.eventb.emf.core/model/eventbcore.ecore#//EventBNamedCommentedElement ../../ac.soton.eventb.emf.diagrams/model/diagrams.ecore#//Diagram">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="component" lowerBound="1"
+        eType="ecore:EClass ../../org.eventb.emf.core/model/eventbcore.ecore#//EventBNamedCommentedComponentElement"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hints" lowerBound="1" upperBound="-1"
+        eType="#//Hint" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Hint" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="element" lowerBound="1"
+        eType="ecore:EClass ../../org.eventb.emf.core/model/eventbcore.ecore#//EventBElement"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SelectionHint" eSuperTypes="#//Hint">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="selections" lowerBound="1"
+        upperBound="-1" eType="ecore:EClass ../../org.eventb.emf.core/model/eventbcore.ecore#//EventBElement"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CasesHint" eSuperTypes="#//Hint">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cases" lowerBound="1" upperBound="-1"
+        eType="#//Case" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Case" eSuperTypes="../../org.eventb.emf.core/model/eventbcore.ecore#//EventBNamedCommentedPredicateElement"/>
+</ecore:EPackage>
